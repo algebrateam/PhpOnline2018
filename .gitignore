@@ -1,4 +1,5 @@
 /nbproject
+nbproject/
 vendor/
 node_modules/
 npm-debug.log
