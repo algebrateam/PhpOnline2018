@@ -109,3 +109,54 @@ else
     $nin--;
 echo '<br>';
 echo 'nin='.$nin;
+
+if($nin > 0 && $nin < 10)
+    echo 'Broj je u trazenom nizu';
+else
+    echo 'Broj nije iz trazenog niza';
+echo '<br>';
+
+if($nin > 0 || $nun < 0)
+    echo 'Brojevi zadovoljavaju uvjete';
+else
+    echo 'Brojevi ne zadovoljavaju uvjete';
+echo '<br>';
+
+$nfn = 0;
+
+if($nfn)
+    echo 'Uvjet je istinit';
+else
+    echo 'Uvjet je laz';
+echo '<br>';
+
+if(!$nfn)
+    echo 'Uvjet je istinit';
+else
+    echo 'Uvjet je laz';
+echo '<br>';
+
+$kero = 1;
+$gero = (int)$a;
+$nero = (string)$a;
+
+if($gero === $nero)
+    echo 'Identicne su';
+else
+    echo 'Nisu identicne';
+echo '<br>';
+
+$gero += 5;
+$gero = $gero + 5;
+echo $gero;
+echo '<br>';
+
+$gero -= 2;
+$gero = $gero - 2;
+echo $gero;
+echo '<br>';
+
+$gero -= 2;
+$gero = $gero - 2;
+echo $gero;
+echo '<br>';
