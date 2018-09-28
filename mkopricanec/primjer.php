@@ -17,4 +17,4 @@ $mar = 'Marko Koprichanec';
 echo '$mar';
 $marpolje=array('Marko','Koprichanec');
 echo '<br>'.$marpolje[0];
-echo '<br>'.$marpolje[0];
+echo '<br>'.$marpolje[1];
