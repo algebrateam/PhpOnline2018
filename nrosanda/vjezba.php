@@ -6,5 +6,5 @@
  * and open the template in the editor.
  */
 
-$naziv = "Proba";
+$naziv = "Probno";
         echo $naziv;
