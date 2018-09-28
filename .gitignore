@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+<master
+/nbproject/private/
+
+=======
+>>>>>>> a2c3f52cb953691be31726873cfb0b77ed961be6
 /nbproject
 vendor/
 node_modules/
@@ -19,3 +25,8 @@ Homestead.json
 
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
 .rocketeer/
+<<<<<<< HEAD
+
+master
+=======
+>>>>>>> a2c3f52cb953691be31726873cfb0b77ed961be6
