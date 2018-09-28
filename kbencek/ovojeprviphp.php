@@ -5,7 +5,7 @@
 <body>
 
 <?php
-echo "<h2>PHP Proba!</h2>";
+echo "<h2>PHP Probagitt!</h2>";
 echo "Hello world!<br>";
 echo "I'm about to learn PHP!<br>";
 echo "This ", "string ", "was ", "made ", "with multiple parameters.";
