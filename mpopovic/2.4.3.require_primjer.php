@@ -6,6 +6,5 @@
  * and open the template in the editor.
  */
 
-require './dummytext.php';
+include './dummytext4.php';
 echo '<br>nastavak...';
-
