@@ -5,6 +5,7 @@
 =======
 >>>>>>> a2c3f52cb953691be31726873cfb0b77ed961be6
 /nbproject
+nbproject/
 vendor/
 node_modules/
 npm-debug.log
