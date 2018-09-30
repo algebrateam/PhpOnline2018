@@ -10,7 +10,4 @@ $ime ='Sasa';
 $prezime ='Bacic';
 
 echo $ime
-echo '';
 echo 'prezime'
-
-?>
