@@ -33,9 +33,9 @@ echo 'a='.$a;
 echo '<br>';echo '<br>';
 $a=(float)$a;
 echo 'a='.$a;
-$x = 4.365;
+$z = 4.365;
 echo '<br>';
-var_dump($x);
+var_dump($z);
 
 //Zadatak 5.
 
