@@ -7,7 +7,7 @@
  */
 $polje=array(); // prazno polje
 
-$polje1=array('Tesla','Bell','Edison'); //tri elementa polja
+$polje =array('Tesla','Bell','Edison'); //tri elementa polja
 
 echo '<br>'.$polje1[0];  // Tesla
 echo '<br>'.$polje1[1];  // Bell
