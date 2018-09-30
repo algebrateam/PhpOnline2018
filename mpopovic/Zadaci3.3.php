@@ -25,7 +25,7 @@ $f='16';
 
 echo $e + $f;
   
-//zadatak 2.
+//zadatak 2. 
 
 $x = 3;
 $y = 5;
