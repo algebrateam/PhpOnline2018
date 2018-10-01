@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-echo 'ovo je text o generalnim pravima i obvezama';
+echo 'ovo je text o generalnim pravima i obvezama';echo 'ovo je text o generalnim pravima i obvezama';echo 'ovo je text o generalnim pravima i obvezama';echo 'ovo je text o generalnim pravima i obvezama';echo 'ovo je text o generalnim pravima i obvezama';
 
 # boja=red
 # broj=5
