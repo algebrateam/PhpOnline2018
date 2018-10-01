@@ -6,11 +6,9 @@
  * and open the template in the editor.
  */
 
-$ime ='Sasa';
-$prezime ='Bacic';
 
-echo $ime
-echo '';
-echo 'prezime'
+$polje =array('Tesla','Bell','Edison');
 
-?>
+echo $polje[0];  
+echo $polje[1];  
+echo $polje[2]; 
