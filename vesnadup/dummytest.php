@@ -1,4 +1,3 @@
-Html
 <?php
 
 /* 
@@ -7,12 +6,3 @@ Html
  * and open the template in the editor.
  */
 
-/*komentar */
-# komentar
-//komentar
-/**
- * blok komentar
- * još jedan komentar
- */
-
-echo 'Ispis iz PHP';
