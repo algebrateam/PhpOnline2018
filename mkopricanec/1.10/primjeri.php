@@ -147,16 +147,35 @@ else
 echo '<br>';
 
 $gero += 5;
+
+echo $gero;
+echo '<br>';
+
 $gero = $gero + 5;
 echo $gero;
 echo '<br>';
 
 $gero -= 2;
+
+echo $gero;
+echo '<br>';
+
 $gero = $gero - 2;
 echo $gero;
 echo '<br>';
 
-$gero -= 2;
-$gero = $gero - 2;
+$gero /= 2;
+echo $gero;
+echo '<br>';
+
+$gero = $gero / 2;
+echo $gero;
+echo '<br>';
+
+$gero *= 2;
+echo $gero;
+echo '<br>';
+
+$gero = $gero * 2;
 echo $gero;
 echo '<br>';
