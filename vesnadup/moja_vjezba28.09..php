@@ -6,9 +6,3 @@
  * and open the template in the editor.
  */
 
-$a ="Algebra";
-$b = &$a;
-echo $b;
-?>
-
-        

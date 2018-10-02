@@ -6,9 +6,5 @@
  * and open the template in the editor.
  */
 
-$a ="Algebra";
-$b = &$a;
-echo $b;
-?>
+echo 'ovo je Markov dummy text o generalnim pravima i obvezama';
 
-        
