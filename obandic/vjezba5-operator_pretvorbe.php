@@ -1,4 +1,3 @@
-Html
 <?php
 
 /* 
@@ -7,12 +6,11 @@ Html
  * and open the template in the editor.
  */
 
-/*komentar */
-# komentar
-//komentar
-/**
- * blok komentar
- * još jedan komentar
- */
+$a=5;
 
-echo 'Ispis iz PHP';
+$b=(float)$a;
+
+if(is_float($b))
+{
+    echo 'Broj je sa pomičnim zarezom. a = '.$b;
+}
