@@ -21,3 +21,5 @@ echo '<br><br>';
 echo $polje[5];
 echo '<br><br>';
 echo $polje[6];
+echo '<br><br>';
+echo "Samo da vidim je li se promijenilo!";
