@@ -42,5 +42,79 @@ echo '<br>';
 $a = 7;
 $b = 3;
 
-echo '$a + $b = '.$a+$b;
+#nisam mogao nikako skuziti da napravim drukcije hahahahahahahahahhahaha
+#s nizom mi je stalno bacao greške
+echo $a;
+echo "+";
+echo $b;
+echo "=";
+echo $a+$b;
+echo '<br>';
+
+echo $a;
+echo "-";
+echo $b;
+echo "=";
+echo $a-$b;
+echo '<br>';
+
+echo $a;
+echo "*";
+echo $b;
+echo "=";
+echo $a*$b;
+echo '<br>';
+
+echo $a;
+echo "/";
+echo $b;
+echo "=";
+echo $a/$b;
+echo '<br>';
+
+echo $a;
+echo "%";
+echo $b;
+echo "=";
+echo $a%$b;
+echo '<br>';
+
+
+#7. zadatak
+$a = 4;
+$b = 2;
+
+echo $a;
+echo "+";
+echo $b;
+echo "=";
+echo $a+$b;
+echo '<br>';
+
+echo $a;
+echo "-";
+echo $b;
+echo "=";
+echo $a-$b;
+echo '<br>';
+
+echo $a;
+echo "*";
+echo $b;
+echo "=";
+echo $a*$b;
+echo '<br>';
+
+echo $a;
+echo "/";
+echo $b;
+echo "=";
+echo $a/$b;
+echo '<br>';
+
+echo $a;
+echo "%";
+echo $b;
+echo "=";
+echo $a%$b;
 echo '<br>';
