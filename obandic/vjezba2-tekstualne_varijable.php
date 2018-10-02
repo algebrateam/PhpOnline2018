@@ -6,5 +6,7 @@
  * and open the template in the editor.
  */
 
-require './dummytext.php';
-echo '<br>nastavak...';
+$ime='Olivera';
+$prezime='Bandić';
+
+echo "Moje ime je $ime, a prezime je $prezime.";

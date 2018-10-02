@@ -6,5 +6,14 @@
  * and open the template in the editor.
  */
 
-require './dummytext.php';
-echo '<br>nastavak...';
+$a='9';
+$b='24';
+$c='16';
+$d='3';
+$e='4';
+
+echo "$a x^2 + $b x + $c = ($d x + $e)^2";
+
+echo '<br><br>';
+
+echo "$c a^2 - $b ab + $a b^2 = ($e a - $d b)^2";

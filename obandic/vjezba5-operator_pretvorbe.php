@@ -6,3 +6,11 @@
  * and open the template in the editor.
  */
 
+$a=5;
+
+$b=(float)$a;
+
+if(is_float($b))
+{
+    echo 'Broj je sa pomičnim zarezom. a = '.$b;
+}

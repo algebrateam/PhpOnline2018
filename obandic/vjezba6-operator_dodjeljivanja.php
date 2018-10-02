@@ -6,5 +6,10 @@
  * and open the template in the editor.
  */
 
-require './dummytext.php';
-echo '<br>nastavak...';
+$a=5;
+echo 'a = '.$a;
+
+echo '<br><br>';
+
+$a+=5;
+echo 'a + 5 = '.$a;

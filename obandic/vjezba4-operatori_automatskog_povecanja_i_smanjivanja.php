@@ -6,5 +6,12 @@
  * and open the template in the editor.
  */
 
-require './dummytext.php';
-echo '<br>nastavak...';
+$a=5;
+$x=$a++;
+echo 'a = '.$x;
+echo'<br><br>';
+echo 'nakon povećanja '.$a;
+
+$y=--$x;
+echo'<br><br>';
+echo 'nakon smanjenja '.$y;
