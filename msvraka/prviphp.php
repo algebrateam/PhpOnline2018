@@ -19,3 +19,5 @@ Nešto iz HTMLa.
 
 
 echo 'Ovo je ispis iz PHPa';
+echo 'Ovo je ispis iz PHPa';
+echo 'Ovo je ispis iz PHPa';
