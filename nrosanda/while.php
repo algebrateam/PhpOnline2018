@@ -7,21 +7,19 @@
  */
 
 
+
 $i=0;
 $konacnibroj=100;
-$ciljanizbroj=16;
-
+$ciljanizbroj=20;
 while ($i <= $konacnibroj) 
-{
+{   
+    if($zbroj>= $ciljanizbroj) 
+    
+        break;
+            
     $zbroj += $i;
-    $i++;
-    
-if($zbroj >= $ciljanizbroj) 
-              
-    break;
-    
-    echo $i.' ';
-    
+    ++$i;
+     echo $i,'';
     
 }
 echo "<br>zbroj svih brojeva od 1 do broja "
