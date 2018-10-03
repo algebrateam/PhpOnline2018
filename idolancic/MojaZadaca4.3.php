@@ -1,6 +1,6 @@
 <?php
 
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -13,10 +13,10 @@ echo $ime.(' ').$prezime;
 echo '<br/>';
 //3.zadatak
 $a = 5;
-++$a;
+$a++;
 echo $a;
 echo '<br/>';
---$a;
+$a--;
 echo $a;
 echo '<br/>';
 
@@ -28,14 +28,11 @@ echo '<br/>';
 $a += 5;
 
 //6.zadatak
-unset ($a);
+unset($a);
 $a = 7;
 $b = 3;
-echo $a.'+'.$b.'='.($a+$b).'<br/>';
-echo $a.'-'.$b.'='.($a-$b).'<br/>'; 
-echo $a.'*'.$b.'='.($a*$b).'<br/>';
-echo $a.'/'.$b.'='.($a/$b).'<br/>'; 
-echo $a.'%'.$b.'='.($a%$b).'<br/>'; 
-
-
-       
+echo $a.'+'.$b.'='.($a + $b).'<br/>';
+echo $a.'-'.$b.'='.($a - $b).'<br/>';
+echo $a.'*'.$b.'='.($a * $b).'<br/>';
+echo $a.'/'.$b.'='.($a / $b).'<br/>';
+echo $a.'%'.$b.'='.($a % $b).'<br/>';
