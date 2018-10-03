@@ -5,4 +5,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+$a=5;
+$a+=5;
+echo 'Uvecani a je = '.$a;
 

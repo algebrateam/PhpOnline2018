@@ -9,11 +9,11 @@
 #1.zadatak
 $ime = 'Sasa';
 $prezime = 'Bacic';
-echo 'Moje ime i prezime je .&ime' '.$prezime';
+echo 'Moje ime i prezime je'.$ime .$prezime;
 echo '<br>';
 
 #2. zadatak
-$ime = 'PHP':
+$ime ='php';
 echo 'Ovo je '.$ime.'tecaj';
 
 #3. zadatak
@@ -40,23 +40,23 @@ echo $x;
 $a =1;
 $b =2;
 
-if($a < $b)
+if($a < $b){
     $a++;
-else
+
     $a--;
         
-echo 'a='.$a;
+echo 'a='.$a; }
 
 #8.zadatak
 $a = 1;
 $b = 2;
 
-if ($a >= $b)
+if ($a >= $b) {
     $a++;
-else        
+        
     $a--;
 
-echo 'a=.$a';
+echo 'a=.$a';}
        
 
 

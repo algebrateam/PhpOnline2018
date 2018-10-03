@@ -6,3 +6,8 @@
  * and open the template in the editor.
  */
 
+$a=5;
+$a++;
+echo $a;
+$a--;
+echo $a;
