@@ -93,3 +93,12 @@ else
 
 $n= $n*5;
 echo "$n<br>";
+
+
+while($i<=10)
+    {$zbroj += $i;
+    $i++;
+if($zbroj=5);
+    break;
+    }
+    echo $zbroj;
