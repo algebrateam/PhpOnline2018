@@ -6,3 +6,13 @@
  * and open the template in the editor.
  */
 
+$zbroj=0;
+$i=1;
+$konacnibroj=100;
+while ($i <= $konacnibroj) {
+    $zbroj += $i;
+    echo $i.' ';
+    $i++;
+}
+
+echo $zbroj;
