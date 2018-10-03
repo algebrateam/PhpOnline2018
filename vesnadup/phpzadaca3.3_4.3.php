@@ -1,6 +1,6 @@
 <?php
 
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -25,7 +25,7 @@ $b = 5;
 /* Defin. varijablu $a s vrijednoš?u 3 i varijablu $b v vrijednoš?u 5.
  * Korištenjem pomo?ne varijable $pom zamijenite njihove sadržaje.
  */
-$pom =$a;
+$pom = $a;
 $a = $b;
 $b = $pom;
 echo'<br/>';
@@ -37,23 +37,23 @@ echo $b;
  * imena i prezimena. Ispisati vrijednost.
  */
 echo'<br/>';
-$ime = "Vesna";
-$prezime ="Duplancic";
+$ime = 'Vesna';
+$prezime = 'Duplancic';
 
 echo $ime;
 echo'';
 echo $prezime;
 
 /*ZADACI ZA PONAVLJANJE 4.3
- * Defirajte 2 varijable $ime i $prezime. Ispisati te dvije varijable 
+ * Defirajte 2 varijable $ime i $prezime. Ispisati te dvije varijable
  * koriste?i se operatorom za nastavljanje nizova.
  */
-$ime ="Vesna";
-$prezime ="Duplancic";
+$ime = 'Vesna';
+$prezime = 'Duplancic';
 echo'<br/>';
-echo $ime."".$prezime;
+echo $ime.''.$prezime;
 
-/*Postaviti vrijednost varijable $a na 5. Korištenjem operatora automatskog 
+/*Postaviti vrijednost varijable $a na 5. Korištenjem operatora automatskog
  * pove?avanja i smanjivanja najprije pove?ajte vrijednost varijable $a te
  * ispišite, a nakon toga smanjite vrijednost pa ispišite.
  */
@@ -69,20 +69,20 @@ echo $a;
  *  s pomi?nim zerezom (float) i ispišite na ekran.
  */
  $a = 5;
- $a = (float)$a;
+ $a = (float) $a;
  echo'<br/>';
  echo $a;
- 
+
  /*Varijablu  $a iz prethodnog zadatka operatorom dodjeljivanja s operacijom
   * uve?ajte za 5.
   */
- $a=5;
- $a +=5;
+ $a = 5;
+ $a += 5;
  echo'<br/>';
  echo $a;
- 
+
  /*Napraviti php stranicu s 2 varijable $a = 7 i $b =3. Zatim na ekranu ispisati
-  * rezultate aritmeti?kih operacija na sljede?i na?in: 
+  * rezultate aritmeti?kih operacija na sljede?i na?in:
   * a. 7+3 = 10
   * b. 7-3 = 4
   * c. 7*3 = 21
@@ -91,11 +91,9 @@ echo $a;
   */
  $a = 7;
  $b = 3;
- 
- echo $a." + ".$b." =".($a+$b)." <br/>";
- echo $a." - ".$b." =".($a-$b)." <br/>";
- echo $a." * ".$b." =".($a*$b)." <br/>";
- echo $a." / ".$b." =".($a/$b)." <br/>";
- echo $a." % ".$b." =".($a%$b)." <br/>";
-     
- 
+
+ echo $a.' + '.$b.' ='.($a + $b).' <br/>';
+ echo $a.' - '.$b.' ='.($a - $b).' <br/>';
+ echo $a.' * '.$b.' ='.($a * $b).' <br/>';
+ echo $a.' / '.$b.' ='.($a / $b).' <br/>';
+ echo $a.' % '.$b.' ='.($a % $b).' <br/>';

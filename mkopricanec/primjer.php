@@ -1,6 +1,6 @@
 <?php
 
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -15,6 +15,6 @@ $a = $pom;
 
 $mar = 'Marko Koprichanec';
 echo '$mar';
-$marpolje=array('Marko','Koprichanec');
+$marpolje = ['Marko', 'Koprichanec'];
 echo '<br>'.$marpolje[0];
 echo '<br>'.$marpolje[1];
