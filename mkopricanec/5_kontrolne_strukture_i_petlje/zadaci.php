@@ -18,3 +18,35 @@ else
 {
     echo 'Varijabla b je veca od varijable a';
 }
+
+#drugi zadatak
+
+if($a > $b)
+{
+    $a++;
+}
+if($b > $a)
+{
+    $b--;
+}
+
+#treci zadatak
+echo '<hr>';
+$i=0;
+
+while($i < 50)
+{
+    $i++;
+    echo $i.'<br>';
+}
+
+#cetvrti zadatak
+$zbroj = 0;
+
+echo '<hr>';
+for($e=20; $e>=20 && $e<=30;)
+{
+    $zbroj += $e;
+    $e++;
+}
+echo $zbroj;
