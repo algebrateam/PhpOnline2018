@@ -1,19 +1,19 @@
 <?php
 
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
-$a=4;
-$b=2;
+$a = 4;
+$b = 2;
 
-$z=$a+$b;
-$r=$a-$b;
-$u=$a*$b;
-$k=$a/$b;
-$m=$a%$b;
+$z = $a + $b;
+$r = $a - $b;
+$u = $a * $b;
+$k = $a / $b;
+$m = $a % $b;
 
 echo 'a. '.$a.' + '.$b.' = '.$z;
 echo '<br><br>';

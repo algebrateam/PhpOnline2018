@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title><?php echo 'prvi php program';?> </title>
+        <title><?php echo 'prvi php program'; ?> </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -12,7 +12,7 @@
 neki HTML code
 <?php
 
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -23,10 +23,9 @@ neki HTML code
 /**
  * blok komentar
  * druga linija
- * treća
+ * treća.
  */
-
-echo '<br>ovo je ispis iz PHPa' ;
+echo '<br>ovo je ispis iz PHPa';
 ?>
 
     </body>
