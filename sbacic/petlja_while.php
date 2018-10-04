@@ -6,3 +6,9 @@
  * and open the template in the editor.
  */
 
+$i = 1;
+        
+while($i <= 50) {
+    echo $i."<br/>";
+    $i++;
+}
