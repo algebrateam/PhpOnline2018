@@ -83,7 +83,7 @@ echo '<pre>';
 var_dump($polje);
 echo '</pre>';
 
-$polje=array('Z1'=>'Tesla','Z2'=>'Edison','Stranci'=>'Einstein','Bohr','Curie');
+$polje=array('Z1'=>'Tesla','Z2'=>'Edison','Stranci'=>['Einstein','Bohr','Curie']);
 echo '<hr>Ispis pomoću var_dump():<br>';
 echo '<pre>';
 var_dump($polje);
