@@ -36,3 +36,11 @@ echo '<hr> ispis svih elemenata pomocu duljine polja:<br>';
 for($i=0;$i<=count($polje);$i++){
     echo ''.$polje[$i];
 }
+
+echo '<hr> ispis svih elemenata pomocu foreach() sa kljucem';
+foreach ($polje as $key => $value) {
+    echo $key;
+    echo ' --> ';
+    echo $value;
+    echo '<br>';
+}
