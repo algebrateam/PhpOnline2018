@@ -11,14 +11,14 @@
         Nešto iz HTML-a?
 <?php
 
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
 /* ovo je komentar */
-# ovo je isto komentar
+// ovo je isto komentar
 // pa čak je i ovo komentar
 
 /**
@@ -27,7 +27,6 @@
  * i još linija
  * i još ...
  */
-
 echo '<br>Ovo je ispis iz PHP-a.';
 ?>
 
