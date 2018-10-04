@@ -6,6 +6,13 @@
  * and open the template in the editor.
  */
 
-for ($a = 20; $a <= 30; $a++) {
-  echo '<br>zbrajanje ='.$a;
+$zbroj = 0;
+for ($i = 20; $i <= 30; $i++) {
+    $zbroj+= $i;
 }
+echo '<br>zbroj je '.$zbroj;
+
+// array 
+
+$polje = array ('Tesla', 'Edison', 'Bell');
+echo $polje[0];
