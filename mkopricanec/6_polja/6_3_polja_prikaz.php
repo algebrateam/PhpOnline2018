@@ -44,3 +44,24 @@ foreach ($polje as $key => $value) {
     echo $value;
     echo '<br>';
 }
+
+echo '<hr> ispis svih elemenata pomocu foreach() bez kljuca';
+foreach ($polje as $value) {
+    echo $value;
+    echo ' ';
+}
+
+echo '<hr> Ispis pomoću print_r():<br> sa starim kljucevima';
+echo '<pre>';
+print_r($polje);
+echo '</pre>';
+$polje=sort($polje);
+echo '<hr> Ispis pomoću print_r():<br> s novim rasporedom';
+echo '<pre>';
+print_r($polje);
+echo '</pre>';
+
+echo '<hr> ispis svih elemenata pomocu duljine polja:<br>';
+for($i=0;$i<=count($polje);$i++){
+    echo ''.$polje[$i];
+}
