@@ -9,8 +9,8 @@ $b = 2;
 if ($a < $b) {
     echo "$b <br>";
 } else {
-     echo 'Broj 4 nije veći od broja 2';
- }
+    echo 'Broj 4 nije veći od broja 2';
+}
 ?>  
 
 </body>

@@ -6,12 +6,5 @@
  * and open the template in the editor.
  */
 
-$a = 4;
-$b = 2;
-
-if ($a < $b) {
-    echo $a.'je manji od .$b';
-}
-if ($a > $b) {
-    echo $a.'je vece od .$b';
-}
+include './dummytext4.php';
+echo '<br>nastavak...';

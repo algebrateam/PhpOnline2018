@@ -6,12 +6,11 @@
  * and open the template in the editor.
  */
 
-$a = 4;
-$b = 2;
+$polje = []; //Prazno
 
-if ($a < $b) {
-    echo $a.'je manji od .$b';
-}
-if ($a > $b) {
-    echo $a.'je vece od .$b';
-}
+$polje = ['Plava', 'Crvena', 'Bjela', 'Roza']; //Elementi polja
+
+echo '<br>'.$polje1[0];
+echo '<br>'.$polje1[1];
+echo '<br>'.$polje1[2];
+echo '<br>'.$polje1[3];

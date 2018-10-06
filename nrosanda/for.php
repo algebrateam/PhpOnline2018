@@ -6,12 +6,13 @@
  * and open the template in the editor.
  */
 
-$a = 4;
-$b = 2;
+$zbroj = 0;
+for ($i = 20; $i <= 30; $i++) {
+    $zbroj += $i;
+}
+echo '<br>zbroj je '.$zbroj;
 
-if ($a < $b) {
-    echo $a.'je manji od .$b';
-}
-if ($a > $b) {
-    echo $a.'je vece od .$b';
-}
+// array
+
+$polje = ['Tesla', 'Edison', 'Bell'];
+echo $polje[0];

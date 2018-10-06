@@ -5,13 +5,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+// stranica 49
 
-$a = 4;
-$b = 2;
-
-if ($a < $b) {
-    echo $a.'je manji od .$b';
+$zbroj = 0;
+$i = 1;
+$konacnibroj = 100;
+while ($i <= $konacnibroj) {
+    $zbroj += $i;
+    echo $i.' ';
+    $i++;
 }
-if ($a > $b) {
-    echo $a.'je vece od .$b';
-}
+echo '<br>ukupna suma x brojeva = '.$zbroj;

@@ -6,8 +6,9 @@
  * and open the template in the editor.
  */
 
-$a = 'Algebra';
+$i = 1;
 
-$b = &$a;
-
-echo $b;
+while ($i <= 50) {
+    echo $i.'<br/>';
+    $i++;
+}
