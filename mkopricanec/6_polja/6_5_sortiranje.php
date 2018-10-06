@@ -6,3 +6,28 @@
  * and open the template in the editor.
  */
 
+$fruits = array(0 => 'limun', 'a' => 'naranca', 1 => 'banana', 'b' => 'jabuka');
+
+sort($fruits);
+
+echo '<hr>';
+
+rsort($fruits);
+
+echo '<hr>';
+
+asort($fruits);
+
+echo '<hr>';
+
+arsort($fruits);
+
+echo '<hr>';
+
+ksort($fruits);
+
+echo '<hr>';
+
+krsort($fruits);
+
+echo '<hr>';
