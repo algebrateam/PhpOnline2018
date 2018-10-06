@@ -70,7 +70,7 @@ echo '<br><hr><br>';
 
 /* 6.7.5.
  * Napisite program koji ce s pomocu petlje for automatski stvoriti polje 
- * brojeva od 1 do 100 te s petljom foreach ispisati sadrzaj polja
+ * brojeva od 1 do 100 te s petljom foreach ispisati sadrzaj polja.
  */
 
 
@@ -81,3 +81,4 @@ for ($i = 1; $i <= 100; $i++) {
 foreach ($polje as $value) {
       echo '<br>'.$value.' '; 
 }
+
