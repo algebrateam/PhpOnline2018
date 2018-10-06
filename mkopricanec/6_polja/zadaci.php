@@ -1,45 +1,43 @@
 <?php
 
-  /* 
+  /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
-#prvi zadatak
-  
-$imena = array('Boeing','Rockefeller','Lockheed','Trump','Musk');
+//prvi zadatak
 
-foreach($imena as $ime)
-{
+$imena = ['Boeing', 'Rockefeller', 'Lockheed', 'Trump', 'Musk'];
+
+foreach ($imena as $ime) {
     echo $ime;
     echo '<br>';
 }
 
 echo '<hr>';
 
-#drugi zadatak
-  
-$imena = array('ime5' => 'Boeing','ime4' => 'Rockefeller','ime3' => 'Lockheed','ime2' => 'Trump','ime1' => 'Musk');
+//drugi zadatak
 
-foreach($imena as $ime)
-{
+$imena = ['ime5' => 'Boeing', 'ime4' => 'Rockefeller', 'ime3' => 'Lockheed', 'ime2' => 'Trump', 'ime1' => 'Musk'];
+
+foreach ($imena as $ime) {
     echo $ime;
     echo '<br>';
 }
 
-#treci zadatak
+//treci zadatak
 
 echo '<hr>';
 
 sort($imena);
 $j = count($imena);
-for($i = 0; $i < $j; $i++) {
+for ($i = 0; $i < $j; $i++) {
     echo $imena[$i];
-    echo "<br>";
+    echo '<br>';
 }
 
-#cetvrti zadatak
+//cetvrti zadatak
 
 echo '<hr>';
 
@@ -47,24 +45,21 @@ ksort($imena);
 
 $ii = 0;
 
-foreach($imena as $key => $ime)
-{
+foreach ($imena as $key => $ime) {
     echo 'Element broj '.$key.' ima vrijednost : '.$ime;
     echo '<br>';
 }
 
-#peti zadatak
+//peti zadatak
 
 echo '<hr>';
 
-$polje = array();
+$polje = [];
 
-for($iii = 1;$iii <= 100;$iii++)
-{
-    $polje[]=$iii;
+for ($iii = 1; $iii <= 100; $iii++) {
+    $polje[] = $iii;
 }
 
-foreach($polje as $broj)
-{
+foreach ($polje as $broj) {
     echo $broj.'<br>';
 }
