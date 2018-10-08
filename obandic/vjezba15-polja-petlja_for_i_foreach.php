@@ -11,10 +11,10 @@ foreach ($imena as $value) {
 #*******************************************************************************
 echo '<hr>';
 unset($imena);
-//6.7. Zadatak 2. - Ne znam jesam li dobro shvatila tekst ovog zadatka.
+//6.7. Zadatak 2.
 
 
-$imena = array('0' => 'Vita', 'ime5' => 'Andrea', 'ime4' => 'Marjeta', '3' => 'Karla', '4' => 'Ema');
+$imena = array('ime1' => 'Vita', 'ime5' => 'Andrea', 'ime4' => 'Marjeta', 'ime3' => 'Karla', 'ime2' => 'Ema');
 
 echo '<pre>';
 print_r($imena);
@@ -40,7 +40,7 @@ echo '<hr>';
 unset($imena);
 //6.7. Zadatak 4.
 
-$imena = array('Šimac' => 'Vita', 'Maretić' => 'Andrea', 'Vrcan' => 'Marjeta', 'Borzić' => 'Karla', 'Radanović' => 'Ema');
+$imena = array('ime1' => 'Vita', 'ime5' => 'Andrea', 'ime4' => 'Marjeta', 'ime3' => 'Karla', 'ime2' => 'Ema');
 ksort($imena);
 
 foreach ($imena as $key => $value) {
