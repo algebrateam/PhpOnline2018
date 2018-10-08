@@ -1,12 +1,11 @@
 <?php
 
-/* 
+/*
  * Primjer polja
  * polje,array,kolekcija, hrpa (heap), vektor, matrica
  */
 
-
-$polje ('Tesla','Edison','Bell');
+$polje('Tesla', 'Edison', 'Bell');
 
 // echo $polje; Ne mozemo ispisivati polja na ovaj nacin
 
@@ -27,7 +26,7 @@ echo $polje[2]; //Ispisuje Bell
 echo $polje[1]; //Ispisuje Edison
 
 // Dodajemo jedan element na mjesto 3
-$polje[3]='Penkala';
+$polje[3] = 'Penkala';
 echo '<hr>Ispis pomocu var_dump(): <br>';
 echo '<pre>';
 var_dump($polje); // za potrebe debugginga
@@ -42,7 +41,7 @@ echo '<pre>';
 //echo $polje[2]; //ispisuje Bell //Pokusamo ispisati index 2 (Undefined offset) Ne moze !
 
 // Dodajem novi element na drugi nacin bez specificiranja indexa
-$polje[]=3.14;
+$polje[] = 3.14;
 echo '<hr>Ispis pomocu var_dump(): <br>';
 echo '<pre>';
 var_dump($polje); // za potrebe debugginga
@@ -64,57 +63,53 @@ var_dump($polje); // za potrebe debugginga
 echo '<pre>';
 
 // Obrisi cijeli array
-unset ($polje);
+unset($polje);
 
 //Kreiram opet array
-$polje ('Z1'>'Tesla','Z2'>'Edison','Z3'>'Bell'); //Z1= znanstvenik1
+$polje('Z1' > 'Tesla', 'Z2' > 'Edison', 'Z3' > 'Bell'); //Z1= znanstvenik1
 echo '<hr>Ispis pomocu var_dump(): <br>';
 echo '<pre>';
 var_dump($polje); // za potrebe debugginga
 echo '<pre>';
 
 //ispis elementa
-echo '<br>' .$polje['z2']; //Ispisuje Edison
+echo '<br>'.$polje['z2']; //Ispisuje Edison
 
 // Obrisi cijeli array
-unset ($polje);
+unset($polje);
 
 //Kreiram opet array ovaj oput uz pomoc uglatih zagrada sa asocijacijama
-$polje=['Z1'>'Tesla','Z2'>'Edison','Z3'>'Bell']; //Z1= znanstvenik1
+$polje = ['Z1' > 'Tesla', 'Z2' > 'Edison', 'Z3' > 'Bell']; //Z1= znanstvenik1
 echo '<hr>Ispis pomocu var_dump(): <br>';
 echo '<pre>';
 var_dump($polje); // za potrebe debugginga
 echo '<pre>';
 
 // Obrisi cijeli array
-unset ($polje);
+unset($polje);
 
 //Kreiram opet array ovaj oput uz pomoc uglatih zagrada sa indexima
-$polje=['Tesla', //string
+$polje = ['Tesla', //string
     'Edison',    //string
     'Bell',      //string
     3.14,        //float
     true,        //boolean
-    34>true,     //bool
-    'budan'>false,  //bool
+    34 > true,     //bool
+    'budan' > false,  //bool
     55,             //int
-    new ArrayObject()]; //objekt
+    new ArrayObject(), ]; //objekt
 echo '<hr>Ispis pomocu var_dump(): <br>';
 echo '<pre>';
 var_dump($polje); // za potrebe debugginga
 echo '<pre>';
 
 // Obrisi cijeli array
-unset ($polje);
+unset($polje);
 // polje unutar polja
-$polje=array('Z1'>'Tesla','Z2'>'Edison','stranci'>['Einstein','Bohr','Curie']); //Z1= znanstvenik1
+$polje = ['Z1' > 'Tesla', 'Z2' > 'Edison', 'stranci' > ['Einstein', 'Bohr', 'Curie']]; //Z1= znanstvenik1
 echo '<hr>Ispis pomocu var_dump(): <br>';
 echo '<pre>';
 var_dump($polje); // za potrebe debugginga
 echo '<pre>';
 print_r($polje); // za potrebe debugginga
 echo '<pre>';
-
-
-
-
