@@ -6,6 +6,11 @@
  * and open the template in the editor.
  */
 
-for ($i = 20; $i <= 30; $i++) {
-    echo '<br> Brojevi od 20 do 30: '.$i;
-}
+$polje = []; //Prazno
+
+$polje = ['Plava', 'Crvena', 'Bjela', 'Roza']; //Elementi polja
+
+echo '<br>'.$polje1[0];
+echo '<br>'.$polje1[1];
+echo '<br>'.$polje1[2];
+echo '<br>'.$polje1[3];

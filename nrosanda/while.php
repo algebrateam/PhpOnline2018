@@ -23,6 +23,4 @@ echo '<br>zbroj svih brojeva od 1 do broja '
      .' je manji od '
      .$ciljanizbroj;
 
-
 //zadatak 5.7.4.
-

@@ -1,21 +1,18 @@
 <?php
 
-$a=4;
-$b=2;
+$a = 4;
+$b = 2;
 
 echo 'a = '.$a;
 echo '<br><br>b = '.$b;
 
 echo '<br><br>';
 
-if($a<=$b)
-{
+if ($a <= $b) {
     echo 'Varijabla a je manja ili jednaka od varijable b.';
     $a++;
     $b--;
-}
-else 
-{
+} else {
     echo 'Varijabla a je veća od varijable b.';
     $a--;
     $b++;
@@ -28,14 +25,11 @@ echo '<br><br>b = '.$b;
 
 echo '<br><br>';
 
-if($a<=$b)
-{
+if ($a <= $b) {
     echo 'Varijabla a je manja ili jednaka od varijable b.';
     $a--;
     $b++;
-}
-else 
-{
+} else {
     echo 'Varijabla a je veća od varijable b.';
     $a++;
     $b--;
@@ -48,7 +42,7 @@ echo '<br><br>b = '.$b;
 
 echo '<br><br>';
 
-if($a<=$b):
+if ($a <= $b):
 
     echo 'Varijabla a je manja ili jednaka od varijable b.';
     $a++;
@@ -59,7 +53,7 @@ else:
     echo 'Varijabla a je veća od varijable b.';
     $a--;
     $b--;
-    
+
 endif;
 
 echo '<hr>';
