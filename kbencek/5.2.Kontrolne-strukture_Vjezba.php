@@ -1,6 +1,6 @@
 <?php
 
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -8,11 +8,9 @@
 
 $a = 5;
 
-if ($a <=8) {
+if ($a <= 8) {
     echo 'varijabla a je jednaka ili manja od 8';
-}
-
-else {
+} else {
     echo 'varijabla a je veca od 8';
     echo 'ovdje vijezbam do mraka';
 }
@@ -37,7 +35,7 @@ echo ' 0 && 1 = 0 <br>';
 echo ' 0 && 0 = 0 <br>';
 
 echo 'ili ||<br>';
-echo ' 1 || 1 = 1 <br>';  
+echo ' 1 || 1 = 1 <br>';
 echo ' 1 || 0 = 1 <br>';
 echo ' 0 || 1 = 1 <br>';
 echo ' 0 || 0 = 0 <br>';
@@ -53,4 +51,5 @@ if (strlen($ime) < 5 || strlen($ime) >= 11) {
     echo 'lozinka mora imati najmanje 6 znakova i strogo manje od 11';
     echo '<br>lozinka '.ime.' ima '.strlen($ime).' znakova!';
 } else {
-echo 'lozinka je ispravna'; }
+    echo 'lozinka je ispravna';
+}
