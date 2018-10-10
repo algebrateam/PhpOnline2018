@@ -1,6 +1,6 @@
 <?php
 
-/* 
+/*
  * Pozivamo includanu funkciju
  */
 
@@ -15,4 +15,3 @@ $elem5 = ['ime' => 'Sophie', 'prezime' => 'Marceau'];
 $multi_array = ['glumica1' => $elem1, 'glumica2' => $elem2, 'glumica3' => $elem3, 'glumica4' => $elem4, 'glumica5' => $elem5];
 
 ispistablice($multi_array);
-
