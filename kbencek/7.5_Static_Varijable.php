@@ -5,8 +5,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-$i = 1;
-while ($i <= 50) {
-    echo $i.'<br/>';
-    $i++;
+
+function inc_a()
+{
+    static $a = 0;
+    $a++;
+    echo $a;
 }
+inc_a();
+inc_a();
+inc_a();
