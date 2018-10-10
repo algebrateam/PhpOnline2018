@@ -84,10 +84,24 @@ echo '<hr>Ispis HTML tablice pomoću funkcije';
 
 echo '<hr>';
 
-$boje=[['#105599','Maroon','55%'],['FF0000','Maroon','55%']];
+$boje=[
+    ['#105599','Maroon','55%'],
+    ['#FF0000','Crvenu','100%'],
+    ['#105599','Maroon','55%','QQQQQQQ'],
+    ['#105599','xfgvx','70%'],
+    ['#34223','xfgvx','90%'],
+    ];
 
-foreach ($boje as $boja) {
-    foreach ($boja as $v) {
-        echo $v;
+function ispistablica($boje){
+echo '<table border = 1>';
+    foreach ($boje as $boja) {
+        echo '<tr>';
+        foreach ($boja as $v) {
+            echo '<td>'.$v.'</td>';
+        }
+        echo '</tr>';
     }
+    echo '</table>';
 }
+
+ispistablice($boje);
