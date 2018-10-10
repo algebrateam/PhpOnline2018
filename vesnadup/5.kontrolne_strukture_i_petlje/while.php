@@ -5,22 +5,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-$i = 0;
-$konacnibroj = 100;
-$ciljanizbroj = 20;
-while ($i <= $konacnibroj) {
-    if ($zbroj >= $ciljanizbroj) {
-        break;
-    }
-
+$zbroj = 0;
+$i = 1;
+while ($i <= 1000) { //while - dok god je...
     $zbroj += $i;
     $i++;
-    echo $i,'';
+    echo $i.' ';
 }
-echo '<br>zbroj svih brojeva od 1 do broja '
-     .$i
-     .' je manji od '
-     .$ciljanizbroj;
+echo 'ukupan zbroj x brojeva je'.$zbroj;
 
-//zadatak 5.7.4.
+echo '<hr>';
+
+$zbroj = 0;
+$i = 1;
+$konacnibroj = 100;
+while ($i <= $konacnibroj) {
+    $zbroj += $i;
+    echo $i.' ';
+    $i++;
+}
+echo '<br>ukupna suma x brojeva = '.$zbroj;
