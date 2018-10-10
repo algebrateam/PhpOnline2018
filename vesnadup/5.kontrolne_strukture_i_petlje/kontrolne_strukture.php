@@ -1,6 +1,6 @@
 <?php
 
-/* 
+/*
  * if else
  * switch-case
  * while
@@ -24,17 +24,14 @@ if (strlen($naziv) > 10) {
     echo 'Naziv ima manje ili jednako 10 znakova';
 }
 
-
 echo '<hr>';
-$naziv='Algeb';
-if(strlen($naziv)<5 || strlen($naziv)>=11)
-{echo 'lozinka mora imati najmanje 6 znakova i strogo manje od 11';
-echo '<br>lozinka '.$naziv.' ima '.strlen($naziv).' znakova!';}
-else 
-{echo 'lozinka je ispravna';}
-
-
-
+$naziv = 'Algeb';
+if (strlen($naziv) < 5 || strlen($naziv) >= 11) {
+    echo 'lozinka mora imati najmanje 6 znakova i strogo manje od 11';
+    echo '<br>lozinka '.$naziv.' ima '.strlen($naziv).' znakova!';
+} else {
+    echo 'lozinka je ispravna';
+}
 
 echo '<br>nizanje uvjeta && || <br>';
 echo 'true && true = true<br>'
@@ -53,10 +50,9 @@ echo 'true && true = true<br>'
    echo '1 || 0 = 1 <br>';
    echo '0 || 0 = 1 <br>';
    echo '0 || 1 = 0 <br>';
-   
+
    echo 'not !<br>';
    echo '!1=0<br>';
    echo '!0=1<br>';
-   
+
    echo '<hr>';
-   
