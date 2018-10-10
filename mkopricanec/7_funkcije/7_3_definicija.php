@@ -37,3 +37,57 @@ echo '<br>';
 echo date('m.Y.d');
 echo '<br>';
 echo date('F');
+echo '<hr>';
+
+function hr_dan() {
+    switch (date('w')) {
+        case 0:
+            return 'Nedjelja';
+            break;
+        case 1:
+            return 'Ponedjeljak';
+            break;
+        case 2:
+            return 'Utorak';
+            break;
+        case 3:
+            return 'Srijeda';
+            break;
+        case 4:
+            return 'Četvrtak';
+            break;
+        case 5:
+            return 'Petak';
+            break;
+        default:
+            return 'Subota';
+            break;
+    }
+}
+
+echo 'Danas je '.strtolower(hr_dan());
+
+echo '<hr>Ispis HTML tablice pomoću funkcije';
+
+#<table>
+#    <tr>
+#    <td></td>
+#    <td></td>
+#    <td></td>
+#    </tr>
+#    <tr>
+#    <td></td>
+#    <td></td>
+#    <td></td>
+#    </tr>
+#</table>
+
+echo '<hr>';
+
+$boje=[['#105599','Maroon','55%'],['FF0000','Maroon','55%']];
+
+foreach ($boje as $boja) {
+    foreach ($boja as $v) {
+        echo $v;
+    }
+}
