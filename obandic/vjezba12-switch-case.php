@@ -1,9 +1,8 @@
 <?php
 
-$naziv='geometrija';
+$naziv = 'geometrija';
 
-switch($naziv)
-{
+switch ($naziv) {
     case 'algebra':
         echo 'Naziv je algebra.';
     break;
@@ -25,9 +24,9 @@ echo '<hr>';
 
 // Isto kao gore samo bez vitičastih zagrada i sa endswitch
 
-$naziv2='algebra';
+$naziv2 = 'algebra';
 
-switch($naziv2):
+switch ($naziv2):
     case 'algebra':
         echo 'Naziv je algebra.';
     break;
@@ -49,10 +48,9 @@ echo '<hr>';
 
 // isto kao gore, sa default
 
-$naziv3='tirkizna';
+$naziv3 = 'tirkizna';
 
-switch($naziv3)
-{
+switch ($naziv3) {
     case 'svijetlozelena':
     case 'tamnozelenazelena':
     case 'zelena':
@@ -81,10 +79,9 @@ echo '<hr>';
 
 // slično kao gore, sa default
 
-$naziv4='crvena';
+$naziv4 = 'crvena';
 
-switch(4)
-{
+switch (4) {
     case 'svijetlozelena':
     case 'tamnozelenazelena':
     case 'zelena':

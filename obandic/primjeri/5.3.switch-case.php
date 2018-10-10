@@ -10,7 +10,7 @@ $naziv = 'magenta';  // paziti na case-sensitive slucaj
 
 switch ($naziv) {
     case 'algebra':   // primjer propadanja
-    case 'Algebra':    
+    case 'Algebra':
         echo 'naziv je Algebra';
         break;
     case 'tesla': echo 'naziv je tesla';
@@ -19,7 +19,7 @@ switch ($naziv) {
         break;
     case 'rijeka': echo 'naziv je rijeka';
         break;
-    case 'roza': 
+    case 'roza':
     case 'magenta':
     case 'crvena':
     case 'svjetlocrvena':
