@@ -1,19 +1,22 @@
 <?php
 
-/* 
+/*
  * Funkcija za promjenjivim imenom
  */
-function sum($a=5,$b=7){
-    echo '<hr>'.($a+$b);
+function sum($a = 5, $b = 7)
+{
+    echo '<hr>'.($a + $b);
 }
-function avg($a=5,$b=7){
-    echo '<hr>'.($a+$b)/2;
+function avg($a = 5, $b = 7)
+{
+    echo '<hr>'.($a + $b) / 2;
 }
-function mini($a=5,$b=7){
+function mini($a = 5, $b = 7)
+{
     echo '<hr>'.min(func_get_args());
 }
 
-$func_name='mini';
+$func_name = 'mini';
 
 switch ($func_name) {
     case 'sum':
@@ -29,7 +32,6 @@ mini();
 
         break;
 }
-if (function_exists($func_name)){
+if (function_exists($func_name)) {
     $func_name();
 }
-
