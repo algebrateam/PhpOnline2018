@@ -16,7 +16,7 @@ while ($i <= $konacnibroj) {
 
     $zbroj += $i;
     $i++;
-    echo $i,'';
+    echo $i,' ';
 }
 echo '<br>zbroj svih brojeva od 1 do broja '
      .$i
