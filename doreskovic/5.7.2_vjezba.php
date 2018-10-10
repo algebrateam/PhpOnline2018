@@ -1,6 +1,6 @@
 <?php
 
-//Zadatak 5.7.2. Napisati program koji koristi dvije varijable i definirajte 
+//Zadatak 5.7.2. Napisati program koji koristi dvije varijable i definirajte
 //vrijednosti. Ako je a veća od b uvećajte a za jedan, a ako je veća b, umanjite
 //a za jedan. Na kraju ispišite obje vrijednosti
 
@@ -12,4 +12,3 @@ if ($a > $b) {
     $a--;
 }
 echo $a.'<br>'.$b;
-
