@@ -2,6 +2,7 @@
 /*
  * Funkcija za promjenjivim imenom
  */
+
 function sum($a = 5, $b = 7)
 {
     echo '<hr>'.($a + $b);

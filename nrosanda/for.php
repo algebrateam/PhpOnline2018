@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 
 /*
@@ -17,8 +17,7 @@ echo '<br>zbroj je '.$zbroj;
 
 $polje = ['Tesla', 'Edison', 'Bell'];
 echo $polje[0];
-=======
-<?php
+
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -36,4 +35,4 @@ echo '<br>zbroj je '.$zbroj;
 
 $polje = ['Tesla', 'Edison', 'Bell'];
 echo $polje[0];
->>>>>>> origin
+// origin

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 
 /*
@@ -25,8 +25,7 @@ echo '<br>zbroj svih brojeva od 1 do broja '
      .$ciljanizbroj;
 
 //zadatak 5.7.4.
-=======
-<?php
+
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -52,4 +51,4 @@ echo '<br>zbroj svih brojeva od 1 do broja '
      .$ciljanizbroj;
 
 //zadatak 5.7.4.
->>>>>>> origin
+// origin
