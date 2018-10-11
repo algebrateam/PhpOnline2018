@@ -10,3 +10,6 @@ switch ($ime){
         mini(5, 7);
         break;
 }
+
+// Koristili smo funkciju func_get_args a nismo nigdje definirali mini
+
