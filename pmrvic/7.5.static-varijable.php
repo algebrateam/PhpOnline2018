@@ -5,14 +5,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-$a = 4;
-$b = 2;
-
-if ($a < $b) {
-    echo $a.'je manji od '.$b;
+function inc_a()
+{
+    static $a = 0;
+    $a++;  // lokalna varijabla funkcije
+    echo $a;
 }
-
-if ($a > $b) {
-    echo $a.'je vece od '.$b;
-}
+inc_a();
+inc_a();
+inc_a();

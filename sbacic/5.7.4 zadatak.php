@@ -5,8 +5,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-$i = 1;
-while ($i <= 50) {
-    echo $i.'<br/>';
-    $i++;
+
+$zbroj = 0;
+// koristiti iterator imena varijabli $i, $j, $k, $ii, $iii, $jj...
+for ($i = 20; $i <= 30; $i++) {
+    $zbroj += $i;
 }
+echo $zbroj;

@@ -79,25 +79,37 @@ print_r($voce1);
 echo '</pre>';
 echo '<br><hr><br>';
 
+unset($voce1);
+$voce1 = [0 => 'limun', 'a' => 'naranca', 1 => 'banana', 'b' => 'jabuka'];
 asort($voce1);
+echo 'asort';
 echo '<pre>';
 print_r($voce1);
 echo '</pre>';
 echo '<br><hr><br>';
 
+unset($voce1);
+$voce1 = [0 => 'limun', 'a' => 'naranca', 1 => 'banana', 'b' => 'jabuka'];
 arsort($voce1);
+echo 'arsort()';
 echo '<pre>';
 print_r($voce1);
 echo '</pre>';
 echo '<br><hr><br>';
 
-ksort($voce1);
+unset($voce1);
+$voce1 = [0 => 'limun', 'a' => 'naranca', 1 => 'banana', 'b' => 'jabuka'];
+echo 'ksort()';
+ksort($voce1, SORT_STRING);
 echo '<pre>';
 print_r($voce1);
 echo '</pre>';
 echo '<br><hr><br>';
 
-krsort($voce1);
+unset($voce1);
+$voce1 = [0 => 'limun', 'a' => 'naranca', 1 => 'banana', 'b' => 'jabuka'];
+echo 'krsort()';
+krsort($voce1, 2);
 echo '<pre>';
 print_r($voce1);
 echo '</pre>';
