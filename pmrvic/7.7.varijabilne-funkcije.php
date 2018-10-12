@@ -13,20 +13,18 @@ function avg($a = 5, $b = 7)
 }
 function mini($a = 2, $b = 7)
 {
-    /**
+    /*
      * // @BUG Ovo vraca grešku
-     * Warning: min(): Array must contain at least one element in 
+     * Warning: min(): Array must contain at least one element in
      */
-    //echo '<hr>'.min(func_get_args()); // Ovo vraca grešku Warning: min(): Array must contain at least one element in 
+    //echo '<hr>'.min(func_get_args()); // Ovo vraca grešku Warning: min(): Array must contain at least one element in
     print_r(func_get_args());
-    
+
     // Ispravno:
-    echo '<hr>'.min([$a,$b]);
-    
+    echo '<hr>'.min([$a, $b]);
 }
 
 $func_name = 'mini';
-
 
 // prvi način:
 switch ($func_name) {

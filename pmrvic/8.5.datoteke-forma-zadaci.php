@@ -1,11 +1,11 @@
 <?php
-$filename='./saforme.txt';  // najispravnije
-$contents='';
-if(is_file($filename)){
-    $mode='r';
-    $handle= fopen($filename, $mode);  //$handle je tipa 'Resource'
-    $contents=fread($handle, filesize($filename));
-    fclose($handle);  // obavezno zatvori stream 
+$filename = './saforme.txt';  // najispravnije
+$contents = '';
+if (is_file($filename)) {
+    $mode = 'r';
+    $handle = fopen($filename, $mode);  //$handle je tipa 'Resource'
+    $contents = fread($handle, filesize($filename));
+    fclose($handle);  // obavezno zatvori stream
 }
 ?>
 <!DOCTYPE html>
@@ -25,7 +25,7 @@ and open the template in the editor.
         <div>
             <form method="post">  
                 Sadržaj: <br>
- <textarea rows="15" cols="50" name="unos" title="uredi text"><?php echo $contents;?></textarea><br>
+ <textarea rows="15" cols="50" name="unos" title="uredi text"><?php echo $contents; ?></textarea><br>
                 <input name="potvrdi" type="submit">
             </form>
             
@@ -37,10 +37,10 @@ and open the template in the editor.
 
 //print_r($_GET);
 
-if(isset($_POST['potvrdi'])){
-    $filename='./saforme.txt';  
-    $mode='a+';
-    $handle= fopen($filename, $mode);  
-    fwrite($handle, $_POST['unos']); 
-    fclose($handle);  // obavezno zatvori stream 
+if (isset($_POST['potvrdi'])) {
+    $filename = './saforme.txt';
+    $mode = 'a+';
+    $handle = fopen($filename, $mode);
+    fwrite($handle, $_POST['unos']);
+    fclose($handle);  // obavezno zatvori stream
 }

@@ -26,10 +26,10 @@ and open the template in the editor.
 <?php
 
 //print_r($_GET);
-if(isset($_GET['potvrdi'])){
-    $filename='./saforme.txt';  
-    $mode='a+';
-    $handle= fopen($filename, $mode);  
-    fwrite($handle, $_GET['unos'].' ima '.$_GET['broj'].' godina'."\n"); 
-    fclose($handle);  // obavezno zatvori stream 
+if (isset($_GET['potvrdi'])) {
+    $filename = './saforme.txt';
+    $mode = 'a+';
+    $handle = fopen($filename, $mode);
+    fwrite($handle, $_GET['unos'].' ima '.$_GET['broj'].' godina'."\n");
+    fclose($handle);  // obavezno zatvori stream
 }
