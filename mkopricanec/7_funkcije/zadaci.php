@@ -86,3 +86,66 @@ tablica($ucenici);
 echo '<br><br><hr><br>';
 echo 'Treci zadatak: <br><br>';
 
+function zbrajanje($a, $b)
+  {
+      return $a + $b;
+  }
+
+  function oduzimanje($a, $b)
+  {
+      return $a - $b;
+  }
+
+  function mnozenje($a, $b)
+  {
+      return $a * $b;
+  }
+
+  function djeljenje($a, $b)
+  {
+      return $a / $b;
+  }
+
+  function sve_skupa($a, $b)
+  {
+      echo zbrajanje($a, $b);
+      echo oduzimanje($a, $b);
+      echo mnozenje($a, $b);
+      echo djeljenje($a, $b);
+  }
+
+   echo 'Pozivanje funkcije sve_skupa s a=1 i b=2: <br>';
+   $a = 1;
+   $b = 2;
+   sve_skupa($a, $b);
+   echo '<br>';
+   
+   echo 'Pozivanje funkcije sve_skupa s c=2 i d=3: <br>';
+   $c = 2;
+   $d = 3;
+   sve_skupa($c, $d);
+   echo '<br>';
+   
+   echo 'Pozivanje funkcije sve_skupa s e=4 i f=5: <br>';
+   $e = 4;
+   $f = 5;
+   sve_skupa($e, $f);
+   echo '<br>';
+   
+   
+#cetvrti zadatak
+echo '<br><br><hr><br>';
+echo 'Cetvrti zadatak: <br><br>';
+
+function odredi_parametar()
+     {
+         $parametar = func_get_args();
+         foreach ($parametar as $varijabla) {
+             if (is_int($varijabla)) {
+                 echo $varijabla.' je broj<br>';
+             } else {
+                 echo $varijabla.' je string <br>';
+             }
+         }
+     }
+odredi_parametar('test','jen dva tri','dva dva tri',1,2,3,2,2,3);
