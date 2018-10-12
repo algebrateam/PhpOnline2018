@@ -13,7 +13,7 @@ function avg($a = 5, $b = 7)
 }
 function mini($a = 5, $b = 7)
 {
-    echo '<hr>'.(min([$a,$b]));
+    echo '<hr>'.(min([$a, $b]));
 }
 $func_name = 'mini';
 switch ($func_name) {

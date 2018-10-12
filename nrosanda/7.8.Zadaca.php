@@ -1,6 +1,6 @@
 <?php
 
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -11,7 +11,8 @@
  * Parametar koji prosljeduje funkciju je rezultat funkcije date('n').
  */
 
-function mjesec() {
+function mjesec()
+{
     switch (date('n')) {
         case 1:
             return 'Siječanj';
@@ -56,20 +57,21 @@ function mjesec() {
 echo '<br><hr>';
 
 /* 7.8.2.
- * Napisite funkciju koja ispisuje HTML tablicu imena i prezimena 
+ * Napisite funkciju koja ispisuje HTML tablicu imena i prezimena
  * ucenika. Kao parametar joj se prosljeduje polje s imenima i prezimenima.
  */
 
  $ucenici = ['1' => ['naziv' => 'Ivan', 'prezime' => 'Gundulic'],
-    '2' => ['naziv' => 'Tin', 'prezime' => 'Ujevic'],
-    '3' => ['naziv' => 'Ante', 'prezime' => 'Sosa']];
+    '2'          => ['naziv' => 'Tin', 'prezime' => 'Ujevic'],
+    '3'          => ['naziv' => 'Ante', 'prezime' => 'Sosa'], ];
 
-function tablica($ucenici) {
+function tablica($ucenici)
+{
     echo '<table border=1>';
     foreach ($ucenici as $imena) {
         echo '<tr>';
         foreach ($imena as $red) {
-            echo '<td>' . $red . '</td>';
+            echo '<td>'.$red.'</td>';
         }
         echo '</tr>';
     }
@@ -80,30 +82,34 @@ tablica($ucenici);
 echo '<br>';
 echo '<br><hr>';
 
-
 /* 7.8.3.
  * Napisite funkcije za zbrajanje, razliku, umnozak i dijeljenje dva broja.
  * Zatim napisite funkciju koja ce povezivati sve te funkcije odjednom.
  */
 
-function zbrajanje($a, $b) {
+function zbrajanje($a, $b)
+{
     return $a + $b;
 }
-function oduzimanje ($a, $b) {
+function oduzimanje($a, $b)
+{
     return $a - $b;
 }
-function mnozenje ($a, $b) {
+function mnozenje($a, $b)
+{
     return $a * $b;
 }
-function djeljenje ($a, $b) {
+function djeljenje($a, $b)
+{
     return $a / $b;
 }
 
-function operacijevaljdaupale ($a, $b) {
-    echo zbrajanje ($a, $b).'<br>';
-    echo oduzimanje ($a, $b).'<br>';
-    echo mnozenje ($a, $b).'<br>';
-    echo djeljenje ($a, $b).'<br>';
+function operacijevaljdaupale($a, $b)
+{
+    echo zbrajanje($a, $b).'<br>';
+    echo oduzimanje($a, $b).'<br>';
+    echo mnozenje($a, $b).'<br>';
+    echo djeljenje($a, $b).'<br>';
 }
 operacijevaljdaupale(5, 8);
 
@@ -111,21 +117,19 @@ echo '<br>';
 echo '<br><hr>';
 
 /* 7.8.4.
- * Npisite funkciju koja prima varijabilni broj parametra. Parametri su 
+ * Npisite funkciju koja prima varijabilni broj parametra. Parametri su
  * kombinirani brojevi i stringovi. Za svaki parametar ispisite kojeg je tipa.
  */
 
-function broj(){
-   $parametar = func_get_args();
-   foreach ($parametar as $nesto) {
-       if (is_int($nesto)) {
-           echo $nesto.' je broj<br>';
-       }
-       else {
-           echo $nesto.' je string <br>';
-       }
-   }
+function broj()
+{
+    $parametar = func_get_args();
+    foreach ($parametar as $nesto) {
+        if (is_int($nesto)) {
+            echo $nesto.' je broj<br>';
+        } else {
+            echo $nesto.' je string <br>';
+        }
+    }
 }
 broj(1, 'osam', 'svi', 5, 2);
-
-        
