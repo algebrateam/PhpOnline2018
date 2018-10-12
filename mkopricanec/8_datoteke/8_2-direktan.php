@@ -11,3 +11,4 @@ echo 'Ovo je direktan pristup istom primjeru.';
 $filename='polaznici.txt';
 $mode='r';
 $handle= fopen($filename, $mode);
+fclose($handle);
