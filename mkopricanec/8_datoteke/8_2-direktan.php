@@ -6,4 +6,8 @@
  * and open the template in the editor.
  */
 
-$filename='dummytext.php';
+echo 'Ovo je direktan pristup istom primjeru.';
+
+$filename='polaznici.txt';
+$mode='r';
+$handle= fopen($filename, $mode);
