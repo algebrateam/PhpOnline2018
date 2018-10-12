@@ -1,6 +1,6 @@
 <?php
 
-  /* 
+  /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -8,16 +8,16 @@
 
 echo 'primjer funkcije <hr>';
 
-echo ('primjer funkcije <hr>');
+echo 'primjer funkcije <hr>';
 
-$timestamp=time();
+$timestamp = time();
 echo $timestamp;
 echo '<hr>';
 
 echo 'Riječ Algebra ima '.strlen('Algebra').' znakova.';
 echo '<hr>';
 
-$polje=array('Tesla','Bell','Edison');
+$polje = ['Tesla', 'Bell', 'Edison'];
 
 if (is_array($polje)) {
     foreach ($polje as $key => $value) {
@@ -39,7 +39,8 @@ echo '<br>';
 echo date('F');
 echo '<hr>';
 
-function hr_dan() {
+function hr_dan()
+{
     switch (date('w')) {
         case 0:
             return 'Nedjelja';
@@ -69,31 +70,32 @@ echo 'Danas je '.strtolower(hr_dan());
 
 echo '<hr>Ispis HTML tablice pomoću funkcije';
 
-#<table>
-#    <tr>
-#    <td></td>
-#    <td></td>
-#    <td></td>
-#    </tr>
-#    <tr>
-#    <td></td>
-#    <td></td>
-#    <td></td>
-#    </tr>
-#</table>
+//<table>
+//    <tr>
+//    <td></td>
+//    <td></td>
+//    <td></td>
+//    </tr>
+//    <tr>
+//    <td></td>
+//    <td></td>
+//    <td></td>
+//    </tr>
+//</table>
 
 echo '<hr>';
 
-$boje=[
-    ['#105599','Maroon','55%'],
-    ['#FF0000','Crvenu','100%'],
-    ['#105599','Maroon','55%','QQQQQQQ'],
-    ['#105599','xfgvx','70%'],
-    ['#34223','xfgvx','90%'],
+$boje = [
+    ['#105599', 'Maroon', '55%'],
+    ['#FF0000', 'Crvenu', '100%'],
+    ['#105599', 'Maroon', '55%', 'QQQQQQQ'],
+    ['#105599', 'xfgvx', '70%'],
+    ['#34223', 'xfgvx', '90%'],
     ];
 
-function ispistablica($boje){
-echo '<table border = 1>';
+function ispistablica($boje)
+{
+    echo '<table border = 1>';
     foreach ($boje as $boja) {
         echo '<tr>';
         foreach ($boja as $v) {
