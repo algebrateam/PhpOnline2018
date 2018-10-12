@@ -3,8 +3,8 @@
 /* 
  * @author PMrvic
  * @example
- * $myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
- * echo fread($myfile,filesize("webdictionary.txt"));
+ * $myfile = fopen("webdictionary.txt", "w") or die("Unable to open file!");
+ * echo fwrite($myfile,filesize("webdictionary.txt"));
  * fclose($myfile);
  * 
  * Modes	Description
@@ -29,7 +29,7 @@
 
 // $filename='./polaznici.txt';  // najispravnije
 $filename='./test.txt';  // najispravnije
-$mode='r';
+$mode='a+';
 
 $handle= fopen($filename, $mode);  //$handle je tipa 'Resource'
 
@@ -38,10 +38,9 @@ $handle= fopen($filename, $mode);  //$handle je tipa 'Resource'
 
 // fread(<Resource>,<int>);  // int duljina u bajtovima
 //$contents=fread($handle, filesize($filename));
-$contents=fread($handle, 1000);
+for($i=0;$i<=200;$i++){
+   fwrite($handle, $i.' Ovo smo upisali u datoteku test.txt'."\n"); 
+}
+
 fclose($handle);  // obavezno zatvori stream 
-echo $contents;
-
-
-
 
