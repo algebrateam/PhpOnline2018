@@ -38,7 +38,7 @@ if(is_file($filename)){
     echo '<hr>';
 }
 else{
-    echo 'Datoteka test.txt ne postoji.';
+    echo 'Datoteka '.$filename.' ne postoji.';
     echo '<hr>';
 }
 
@@ -49,6 +49,76 @@ if(is_dir($filename)){
     echo '<hr>';
 }
 else{
-    echo 'Datoteka test.txt ne postoji.';
+    echo 'Datoteka '.$filename.' ne postoji.';
+    echo '<hr>';
+}
+
+$dirname='Novitempdir';
+
+if(is_dir($dirname)){
+    echo 'Direktorij '.$dirname.' postoji.';
+    echo '<br>';
+    echo 'Velicina datoteke je '.((filesize($filename)/1000)).'kB.';
+    echo '<hr>';
+}
+else{
+    mkdir($dirname, 0777);
+    echo 'Direktorij '.$dirname.' je napravljen.';
+    echo '<hr>';
+}
+
+$olddirname='Novitempdir';
+
+if(is_dir($olddirname)){
+    echo 'Direktorij '.$olddirname.' je izbrisan.';
+    rmdir($olddirname);
+    echo '<hr>';
+}
+else{
+    echo 'Direktorij '.$olddirname.' ne postoji.';
+    echo '<hr>';
+}
+
+if(is_dir($dirname)){
+    echo 'Direktorij '.$dirname.' postoji.';
+    echo '<br>';
+    echo 'Velicina datoteke je '.((filesize($filename)/1000)).'kB.';
+    echo '<hr>';
+}
+else{
+    mkdir($dirname, 0777);
+    echo 'Direktorij '.$dirname.' je napravljen.';
+    echo '<hr>';
+}
+
+if(is_dir($olddirname)){
+    echo 'Datoteka '.$olddirname.' je izbrisana.';
+    unset($olddirname);
+    echo '<hr>';
+}
+else{
+    echo 'Datoteka '.$olddirname.' ne postoji.';
+    echo '<hr>';
+}
+
+if(is_dir($dirname)){
+    echo 'Direktorij '.$dirname.' postoji.';
+    echo '<br>';
+    echo 'Velicina datoteke je '.((filesize($filename)/1000)).'kB.';
+    echo '<hr>';
+}
+else{
+    mkdir($dirname, 0777);
+    echo 'Direktorij '.$dirname.' je napravljen.';
+    echo '<hr>';
+}
+
+if(is_dir($olddirname)){
+    echo 'Datoteka '.$olddirname.' je izbrisana.';
+    unlink($olddirname);
+    echo '<hr>';
+}
+else{
+    echo 'Datoteka '.$olddirname.' ne postoji.';
     echo '<hr>';
 }
