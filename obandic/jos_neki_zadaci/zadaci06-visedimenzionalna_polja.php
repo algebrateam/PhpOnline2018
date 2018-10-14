@@ -94,7 +94,7 @@ echo '<tr>
 <th></th>
 <th>Hrvatski</th>
 <th>Matematika</th>
-<th>Povijest</th>
+<th>Engleski jezik</th>
 <th>Prosjek</th>
 </tr>';
 foreach ($ocjene as $ime => $ucenik) {
