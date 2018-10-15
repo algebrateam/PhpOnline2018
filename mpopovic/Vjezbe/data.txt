@@ -1,0 +1,7 @@
+38, Marko, 1980-09-20, plava
+01, Adam, 2017-10-27, zelena
+31, Katarina, 1987-06-07, žuta
+31, Katarina, 1987-06-07, žuta
+31, Katarina, 1987-06-07, žuta
+31, Katarina, 1987-06-07, žuta
+31, Katarina, 1987-06-07, žuta
