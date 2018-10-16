@@ -29,14 +29,11 @@ and open the template in the editor.
 <?php
 
 //print_r($_GET);
-if(isset($_GET['potvrda'])){
+if (isset($_GET['potvrda'])) {
     $filename = './data.txt';
     $mode = 'a+';
     $handle = fopen($filename, $mode);
     fwrite($handle, $_GET['ime'].' '.$_GET['broj'].' '.$_GET['datum'].' '.
             $_GET['Rezultat']."\n");
-    fclose($handle);        
+    fclose($handle);
 }
-
-
-
