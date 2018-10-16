@@ -1,12 +1,12 @@
 <?php
 
-/* 
+/*
 zadatak 1
  */
 
 function hr_mjesec()
-{  // 
-switch (date('n')) {    
+{  //
+    switch (date('n')) {
 case 0: return 'Prosinac';
 break;
 case 1: return 'Siječanj';
@@ -33,19 +33,18 @@ case 11: return 'Studeni';
 break;
 }
 }
-echo '<br>Ovo je mjesec ' .strtolower(hr_mjesec());
+echo '<br>Ovo je mjesec '.strtolower(hr_mjesec());
 
-
-/* 
+/*
 zadatak 2
  */
 
-$učenici= [['Kristijan' , 'Bencek'], 
-    ['Marko' , 'Bencek'],
-    ['Josipa' , 'Bencek'], 
-    ['Gordana' , 'Bencek'],
-    ['Ines' , 'Bencek'],
-    ['Dragutin' , 'Bencek'],];
+$učenici = [['Kristijan', 'Bencek'],
+    ['Marko', 'Bencek'],
+    ['Josipa', 'Bencek'],
+    ['Gordana', 'Bencek'],
+    ['Ines', 'Bencek'],
+    ['Dragutin', 'Bencek'], ];
 
 function ispistablice($b)
 {
