@@ -7,10 +7,11 @@
  */
 
 /**
- *
  * @author pmrvic
  */
-interface IAutomobil {
-   function get_model(); // vraća npr, Honda, Mazda
-   function ispis(); // kompletan ispis svih svojstava
+interface IAutomobil
+{
+    public function get_model(); // vraća npr, Honda, Mazda
+
+    public function ispis(); // kompletan ispis svih svojstava
 }

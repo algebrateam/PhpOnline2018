@@ -7,15 +7,17 @@
  */
 
 /**
- *
  * @author pmrvic
  */
-interface IAuto {
-    function vozi();
-    function stani();
-    function skreni();
-    function gazi();
-    function pali();
+interface IAuto
+{
+    public function vozi();
+
+    public function stani();
+
+    public function skreni();
+
+    public function gazi();
+
+    public function pali();
 }
-
-

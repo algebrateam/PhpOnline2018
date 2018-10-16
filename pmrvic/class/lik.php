@@ -1,62 +1,73 @@
 <?php
 
-interface Ilik{
-function povrsina();
-function opseg();
-}
-
-abstract class lik implements Ilik 
+interface Ilik
 {
-	private $a;
-	function povrsina()
-	{
-		return $this->a*$this->a/2;  // ovo je istostraničan trokut
-	}
+    public function povrsina();
+
+    public function opseg();
 }
 
-class kvadrat extends lik{
-	function __construct($a){
-		$this->a=$a;
-	}
-	function povrsina()
-	{
-		return $this->a*$this->a;
-	}
-	function opseg(){}
+abstract class lik implements Ilik
+{
+    private $a;
+
+    public function povrsina()
+    {
+        return $this->a * $this->a / 2;  // ovo je istostraničan trokut
+    }
 }
 
-class krug extends lik{
-private $blue="<br>++++++ 10  +++++<br>";
-	function __construct($a){
-		$this->a=$a;
-	}
-		function povrsina()
-	{
-		return $this->a*$this->a*M_PI;
-	}
-		function opseg(){
+class kvadrat extends lik
+{
+    public function __construct($a)
+    {
+        $this->a = $a;
+    }
 
-		}
-	
-	public function getBlue(){
-		return $this->blue;
-	}
+    public function povrsina()
+    {
+        return $this->a * $this->a;
+    }
+
+    public function opseg()
+    {
+    }
 }
 
+class krug extends lik
+{
+    private $blue = '<br>++++++ 10  +++++<br>';
 
-$krug1=new krug(5);
-echo "<br>Krug polumjera ".
+    public function __construct($a)
+    {
+        $this->a = $a;
+    }
+
+    public function povrsina()
+    {
+        return $this->a * $this->a * M_PI;
+    }
+
+    public function opseg()
+    {
+    }
+
+    public function getBlue()
+    {
+        return $this->blue;
+    }
+}
+
+$krug1 = new krug(5);
+echo '<br>Krug polumjera '.
      $krug1->a.
-     " ima površinu ".
+     ' ima površinu '.
      $krug1->povrsina();
      // echo $krug1->blue;  // ne može jer je $blue private
      echo $krug1->getBlue();
 
-$kvadrat1=new kvadrat(5);
-echo "<br>Kvadrat stranice ".
+$kvadrat1 = new kvadrat(5);
+echo '<br>Kvadrat stranice '.
      $kvadrat1->a.
-     " ima površinu ".
+     ' ima površinu '.
      $kvadrat1->povrsina();
-
-
-?>

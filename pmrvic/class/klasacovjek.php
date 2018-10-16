@@ -3,31 +3,31 @@
 echo "Klase i objekti<br>";
 
 class covjek{
-	// var $ime="moje defaoultno ime";
+    // var $ime="moje defaoultno ime";
     protected $ime;
 
     function __construct($novoime){
-    	//provjera($novoime);
-    	if (gettype($novoime)!='string'){
-    		echo "alo brale ime mora nbiti string";
-    		exit;
-    	}
-    	else{
-    	$this->ime=$novoime;	
-    	}
-    	
+        //provjera($novoime);
+        if (gettype($novoime)!='string'){
+            echo "alo brale ime mora nbiti string";
+            exit;
+        }
+        else{
+        $this->ime=$novoime;
+        }
+
     }
 
-	public function set_ime($ime){
-		$this->ime=$ime;
-	}
-	function get_ime(){
-		return $this->ime;
-	}
-	
-	function __destruct(){
-		 echo "<br> ".$this->ime." je gecrk";
-	}
+    public function set_ime($ime){
+        $this->ime=$ime;
+    }
+    function get_ime(){
+        return $this->ime;
+    }
+
+    function __destruct(){
+         echo "<br> ".$this->ime." je gecrk";
+    }
 
 
 }
@@ -65,7 +65,7 @@ function __construct($novo_ime){
 }
 function ispis(){
 
-	echo "<br>+++++ ".$this->ime." ima id:".$this->id_kupca." a potrosio je:".$this->potroseni_iznos;
+    echo "<br>+++++ ".$this->ime." ima id:".$this->id_kupca." a potrosio je:".$this->potroseni_iznos;
 
 }
 }
@@ -82,9 +82,7 @@ echo "<br>---- ime kupca je ",$k1->get_ime();
 //.$k1->ime;  // ovo ne koristimo jer je ime private
 
 interface Ikupac{
-	function ispis();
+    function ispis();
 }
 
 */
-
-?>
