@@ -6,7 +6,7 @@
 
 $i = 0;
 while ($i < 10) {
-    echo $i . ' ';
+    echo $i.' ';
     $i++;
 }
 
@@ -30,7 +30,7 @@ echo '<hr>';
 
 $i = 0;
 do {
-    echo $i . ' ';
+    echo $i.' ';
     $i++;
 } while ($i < 10);
 
@@ -41,7 +41,7 @@ echo '<hr>';
 
 $i = 0;
 do {
-    echo $i . ' ';
+    echo $i.' ';
     $i++;
 } while ($i > 10); // petlja će se izvršiti samo za broj 0!!!
 
@@ -51,7 +51,7 @@ echo '<hr>';
 // Petlja FOR ==== Ispis brojeva manjih od 10.
 
 for ($i = 0; $i < 10; $i++) {
-    echo $i . ' ';
+    echo $i.' ';
 }
 
 echo '<hr>';
@@ -71,7 +71,7 @@ echo '<hr>';
 // Petlja FOR ==== Ispis parnih brojeva manjih od 10.
 
 for ($i = 0; $i < 10; $i = $i + 2) {
-    echo $i . ' ';
+    echo $i.' ';
 }
 
 echo '<hr>';
@@ -81,7 +81,7 @@ echo '<hr>';
 
 $i = 0;
 while ($i < 10) {
-    echo $i . ' ';
+    echo $i.' ';
     $i++;
     if ($i == 6) {
         break;
@@ -97,7 +97,7 @@ for ($i = 0; $i < 10; $i++) {
     if ($i == 6) {
         break;
     }
-    echo $i . ' ';
+    echo $i.' ';
 }
 
 echo '<hr>';
@@ -125,7 +125,7 @@ for ($i = 0; $i < 10; $i++) {
     if ($i == 6) { // preskače broj 6
         continue;
     }
-    echo $i . ' ';
+    echo $i.' ';
 }
 
 echo '<hr>';

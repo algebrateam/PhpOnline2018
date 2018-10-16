@@ -29,17 +29,16 @@
             $filename = 'data.txt';
 
             if (is_file($filename)) {
-
                 $datoteka = file($filename);
 
                 $x = count($datoteka) / 4;
 
                 for ($i = 0; $i < $x; $i++) {
                     echo '<tr>';
-                    echo '<td>' . $datoteka[(4 * $i)] . '</td>';
-                    echo '<td>' . $datoteka[(4 * $i + 1)] . '</td>';
-                    echo '<td>' . $datoteka[(4 * $i + 2)] . '</td>';
-                    echo '<td>' . $datoteka[(4 * $i + 3)] . '</td>';
+                    echo '<td>'.$datoteka[(4 * $i)].'</td>';
+                    echo '<td>'.$datoteka[(4 * $i + 1)].'</td>';
+                    echo '<td>'.$datoteka[(4 * $i + 2)].'</td>';
+                    echo '<td>'.$datoteka[(4 * $i + 3)].'</td>';
                     echo '</tr>';
                 }
             } else {

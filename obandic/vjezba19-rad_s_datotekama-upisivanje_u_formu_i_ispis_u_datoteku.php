@@ -34,15 +34,14 @@
 //print_r($_GET);
 
 if (isset($_GET['submit'])) {
+    $filename = 'vjezba19-saforme.txt';
 
-$filename = 'vjezba19-saforme.txt';
+    $mode = 'a+';
 
-$mode='a+';
+    $handle = fopen($filename, $mode);
 
-$handle = fopen($filename, $mode);
+    fwrite($handle, 'Ime i prezime: '.$_GET['name'].' Godina rodenja: '.$_GET['bdate']."\n");
 
-fwrite($handle,'Ime i prezime: '.$_GET['name'].' Godina rodenja: '.$_GET['bdate']."\n");
-
-fclose($handle);
+    fclose($handle);
 }
 ?>

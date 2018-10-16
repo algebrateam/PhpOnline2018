@@ -104,14 +104,13 @@
 
 <?php
 if (isset($_POST['submit'])) {
-
     $filename = 'data.txt';
 
     $mode = 'a+';
 
     $handle = fopen($filename, $mode);
 
-    fwrite($handle, $_POST['oib'] . "\n" . $_POST['name'] . "\n" . $_POST['date'] . "\n" . $_POST['result'] . "\n");
+    fwrite($handle, $_POST['oib']."\n".$_POST['name']."\n".$_POST['date']."\n".$_POST['result']."\n");
 
     fclose($handle);
 }
