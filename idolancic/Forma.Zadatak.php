@@ -37,6 +37,3 @@ if(isset($_GET['potvrda'])){
             $_GET['Rezultat']."\n");
     fclose($handle);        
 }
-
-
-
