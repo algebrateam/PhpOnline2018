@@ -23,9 +23,9 @@ if ($a <= 2) {
     echo 'Varijabla a je manja ili jednaka broju 2';
     $a++;
 } else {
-     echo 'Varijabla je veća od broja 2';
-     $a = 1;
- }
+    echo 'Varijabla je veća od broja 2';
+    $a = 1;
+}
 
  //3. primjer endif :
 
@@ -66,8 +66,8 @@ if (strlen($naziv) > 10) {
 } elseif (strlen($naziv) >= 5 && strlen($naziv) <= 10) {
     echo 'Dužina naziva je u zadanom nizu';
 } else {
-     echo 'Naziv je prekratak';
- }
+    echo 'Naziv je prekratak';
+}
 
  echo '<hr>';
 //ternarni uvjetni operator

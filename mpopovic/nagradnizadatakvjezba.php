@@ -78,8 +78,8 @@ if (is_file($filename)) {
 
     echo $html;
 } else {
-     echo 'Datoteka data.txt ne postoji.';
- }
+    echo 'Datoteka data.txt ne postoji.';
+}
 
 /*Z3:
  * Uneseni datum prikazati kao 16. ožujak, 2018.
