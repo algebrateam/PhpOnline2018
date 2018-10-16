@@ -1,6 +1,6 @@
 <?php
 
-interface IAstra {
- function stedljiva();
+interface IAstra
+{
+    public function stedljiva();
 }
-
