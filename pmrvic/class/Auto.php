@@ -2,7 +2,7 @@
 include './IAuto.php';
 abstract class Auto implements IAuto{
     protected $potrosnja;
-    private $brojsjedala;
+    protected $brojsjedala;
 
 
     public function gazi() {

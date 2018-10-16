@@ -3,6 +3,7 @@ include './Astra.php';
 include './Zafira.php';
 
 $A1=new Astra();
+$A1->boja='Plava';
 $Z1= new Zafira();
 
 Echo '<h1>Usporedba vozila</h1>';
