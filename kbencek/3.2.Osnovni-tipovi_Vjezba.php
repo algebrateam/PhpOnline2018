@@ -24,8 +24,8 @@ if ($logickaistina) {
 if ($logickaistina) {
     echo '<br>ovo se nece vidjeti';
 } else {
-     echo '<br>ovo se dogodi ako je logicka laz na false';
- }
+    echo '<br>ovo se dogodi ako je logicka laz na false';
+}
 
 if (!$logickalalaz) {
     echo '<br>ovo se nece vidjeti';
