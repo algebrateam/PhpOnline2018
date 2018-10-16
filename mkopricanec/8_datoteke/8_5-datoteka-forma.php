@@ -1,0 +1,15 @@
+<?php
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+if (isset($_GET['potvrdi'])) {
+    $filename = './saforme.txt';
+    $mode = 'a+';
+    $handle = fopen($filename, $mode);
+    fwrite($handle, $_GET['unos'].' ima '.$_GET['broj'].' godina.');
+    fclose($handle);
+}
