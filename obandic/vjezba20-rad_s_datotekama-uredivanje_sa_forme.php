@@ -39,14 +39,13 @@ if (is_file($filename)) {
 //print_r($_GET);
 
 if (isset($_POST['submit'])) {
-
     $filename = 'vjezba20-saforme.txt';
 
     $mode = 'a+';
 
     $handle = fopen($filename, $mode);
 
-    fwrite($handle, $_POST['poruka'] . "\n \n");
+    fwrite($handle, $_POST['poruka']."\n \n");
 
     fclose($handle);
 }

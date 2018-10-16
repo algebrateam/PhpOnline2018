@@ -4,7 +4,8 @@
 // *****************************************************************************
 // LOKALNE VARIJABLE
 
-function ispisi() {
+function ispisi()
+{
     $a = 2;
     echo $a; // ispisuje 2
 }
@@ -19,7 +20,8 @@ echo '<hr>';
 
 $a = 5;
 
-function inc_a() {
+function inc_a()
+{
     $a = 0;
     $a++;
     echo $a; // ispisuje 1
@@ -36,7 +38,8 @@ echo '<hr>';
 
 $a = 5;
 
-function ispisi2() {
+function ispisi2()
+{
     global $a;
     echo $a;
 }
@@ -51,7 +54,8 @@ echo '<hr>';
 
 $a = 3;
 
-function inc_a2() {
+function inc_a2()
+{
     global $a;
     $a++;
     echo $a; // ispisuje 4
@@ -60,14 +64,15 @@ function inc_a2() {
 inc_a2();
 inc_a2();
 inc_a2();
-echo '<br>' . $a;
+echo '<br>'.$a;
 
 echo '<hr>';
 
 // *****************************************************************************
 // STATIČNE VARIJABLE - bez ključne riječi STATIC
 
-function inc3_a() {
+function inc3_a()
+{
     $a = 0;
     $a++;
     echo $a;
@@ -82,7 +87,8 @@ echo '<hr>';
 // *****************************************************************************
 // STATIČNE VARIJABLE - sa ključnom riječi STATIC
 
-function inc4_a() {
+function inc4_a()
+{
     static $a = 0;
     $a++;
     echo $a;
