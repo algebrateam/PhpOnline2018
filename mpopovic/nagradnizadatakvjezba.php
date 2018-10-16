@@ -47,7 +47,6 @@ if (isset($_POST['potvrdi'])) {
     $handle = fopen($filename, $mode);
     fwrite($handle, $_POST['broj'].', '.$_POST['unos'].', '.$_POST['datum'].', '.$_POST['boje']."\n");
     fclose($handle);
-    
 }
 
 /*
@@ -59,53 +58,48 @@ echo '<hr>Zadatak 2.<br>';
 
 $filename = './data.txt';
 if (is_file($filename)) {
-    
-$file = file_get_contents($filename); 
-$rows = explode("\n", $file); 
+    $file = file_get_contents($filename);
+    $rows = explode("\n", $file);
 
-$html = "<table border =1>"; 
-$html = $html . "<tr><th>Broj</th><th>Ime</th><th>Datum</th><th>Boja</th></tr>";
+    $html = '<table border =1>';
+    $html = $html.'<tr><th>Broj</th><th>Ime</th><th>Datum</th><th>Boja</th></tr>';
 
-foreach($rows as $row) {
-    $html = $html . "<tr>"; 
-    $rowEntry = explode(",", $row); 
-    foreach($rowEntry as $entry) {
-        $html = $html . "<td>". $entry ."</td>"; 
+    foreach ($rows as $row) {
+        $html = $html.'<tr>';
+        $rowEntry = explode(',', $row);
+        foreach ($rowEntry as $entry) {
+            $html = $html.'<td>'.$entry.'</td>';
+        }
+
+        $html = $html.'</tr>';
     }
 
-    $html = $html . "</tr>"; 
-}
+    $html = $html.'</table>';
 
-$html = $html . "</table>"; 
+    echo $html;
+} else {
+     echo 'Datoteka data.txt ne postoji.';
+ }
 
-echo $html;   
-}
- else {
-    echo 'Datoteka data.txt ne postoji.';
-}
-    
 /*Z3:
- * Uneseni datum prikazati kao 16. ožujak, 2018. 
-*/  
-    
+ * Uneseni datum prikazati kao 16. ožujak, 2018.
+*/
+
 echo '<hr>Zadatak 3.<br>';
 
-$file = file_get_contents($filename); 
-$rows = explode("\n", $file); 
+$file = file_get_contents($filename);
+$rows = explode("\n", $file);
 
-
-
-foreach($rows as $row) {
+foreach ($rows as $row) {
     $rowEntry = explode(',', $row);
     //print_r($rowEntry);
-    
+
     $time = strtotime($rowEntry[2]);
-     
+
     //echo strftime('%d.%A.%Y');
 
-    $datum=date('d,F,Y',$time);
-            
-      echo $datum;
-      echo '<br>';
-    }
-  
+    $datum = date('d,F,Y', $time);
+
+    echo $datum;
+    echo '<br>';
+}

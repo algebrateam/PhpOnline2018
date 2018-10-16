@@ -42,18 +42,16 @@ Forma sprema podatke u datoteku data.txt
 if (isset($_POST['potvrdi'])) {
     $filename = './data.txt';
 
-/*
-*Ovaj dio sam izbacio i sve stavio u jednu funkciju file_put_contents jer mi je
-* ova opcija (fwrite(...."/n") stalno otvarala novi red u data.txt fileu,
-* što mi je stvaralo probleme u idućim zadacima
-* $mode = 'a+';
-* $handle = fopen($filename, $mode);
-* fwrite($handle, $_POST['broj'].', '.$_POST['unos'].', '.$_POST['datum'].', '.$_POST['boje']."\n");
-* fclose($handle);
-*/
-    file_put_contents($filename, $_POST['broj'] . ', ' . $_POST['unos'] . ', ' . $_POST['datum'] . ', ' . $_POST['boje']."\r\n", FILE_APPEND);
-
-    
+    /*
+    *Ovaj dio sam izbacio i sve stavio u jednu funkciju file_put_contents jer mi je
+    * ova opcija (fwrite(...."/n") stalno otvarala novi red u data.txt fileu,
+    * što mi je stvaralo probleme u idućim zadacima
+    * $mode = 'a+';
+    * $handle = fopen($filename, $mode);
+    * fwrite($handle, $_POST['broj'].', '.$_POST['unos'].', '.$_POST['datum'].', '.$_POST['boje']."\n");
+    * fclose($handle);
+    */
+    file_put_contents($filename, $_POST['broj'].', '.$_POST['unos'].', '.$_POST['datum'].', '.$_POST['boje']."\r\n", FILE_APPEND);
 }
 
 /*
@@ -65,61 +63,51 @@ echo '<hr>Zadatak 2.<br>';
 
 $filename = './data.txt';
 if (is_file($filename)) {
-
     $file = file_get_contents($filename);
     $rows = explode("\n", $file);
 
-    $html = "<table border =1>";
-    $html = $html . "<tr><th>Broj</th><th>Tekst</th><th>Datum</th><th>Boja</th></tr>";
+    $html = '<table border =1>';
+    $html = $html.'<tr><th>Broj</th><th>Tekst</th><th>Datum</th><th>Boja</th></tr>';
 
     foreach ($rows as $row) {
-        $html = $html . "<tr>";
-        $rowEntry = explode(",", $row);
+        $html = $html.'<tr>';
+        $rowEntry = explode(',', $row);
         foreach ($rowEntry as $entry) {
-            $html = $html . "<td>" . $entry . "</td>";
+            $html = $html.'<td>'.$entry.'</td>';
         }
 
-        $html = $html . "</tr>";
+        $html = $html.'</tr>';
     }
 
-    $html = $html . "</table>";
+    $html = $html.'</table>';
 
     echo $html;
-} 
-else {
+} else {
     echo 'Datoteka data.txt ne postoji.';
 }
 
 /* Zadatak 3:
- * Uneseni datum prikazati kao 16. ožujak, 2018. 
+ * Uneseni datum prikazati kao 16. ožujak, 2018.
  */
 
 echo '<hr>Zadatak 3.<br>';
 
 if (is_file($filename)) {
-
     $file = file_get_contents($filename);
     $rows = explode("\n", $file);
 
-
-
-foreach ($rows as $row) {
-    $rowEntry = explode(',', $row);
-    //echo $rowEntry[2];
-    if (is_null($rowEntry)) {
-     break;   
+    foreach ($rows as $row) {
+        $rowEntry = explode(',', $row);
+        //echo $rowEntry[2];
+        if (is_null($rowEntry)) {
+            break;
+        } else {
+            setlocale(LC_TIME, 'hr_HR');
+            echo '<br>';
+            echo strftime(' %d. %B, %Y.', strtotime($rowEntry[2]));
+            echo '<br>';
+        }
     }
- else {
-        
-    setlocale(LC_TIME, 'hr_HR');
-    echo '<br>';
-    echo strftime(" %d. %B, %Y.", strtotime($rowEntry[2]));
-    echo '<br>';
-    }
-}
-}
-else {
+} else {
     echo 'Datoteka data.txt ne postoji.';
 }
-  
-
