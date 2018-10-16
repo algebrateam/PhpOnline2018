@@ -1,1 +1,2 @@
-10Marko2018-10-04Prolaz
+80,Marko,2018-10-21,Prolaz
+77,Marko,2018-10-21,Prolaz

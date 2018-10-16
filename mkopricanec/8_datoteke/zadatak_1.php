@@ -35,7 +35,7 @@ $filename='data.txt';
 $mode = 'a+';
 
 $handle = fopen($filename,$mode);
-fwrite($handle, $_GET["Broj"].$_GET["Ime"].$_GET["Datum"].$_GET["Prolaz"]);
+fwrite($handle, $_GET["Broj"].','.$_GET["Ime"].','.$_GET["Datum"].','.$_GET["Prolaz"]."\n");
 fclose($handle);
 }
 
