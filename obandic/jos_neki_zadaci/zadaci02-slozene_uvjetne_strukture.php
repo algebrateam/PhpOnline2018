@@ -63,13 +63,13 @@ $a = 7;
 switch ($a) {
     case 0:
     case 1:
-        echo "a je jednako 0 ili 1.";
+        echo 'a je jednako 0 ili 1.';
         break;
     case 2:
-        echo "a je jednako 2.";
+        echo 'a je jednako 2.';
         break;
     default:
-        echo "a nije jednako 0, 1 niti 2.";
+        echo 'a nije jednako 0, 1 niti 2.';
 }
 
 echo '<hr>';
@@ -77,16 +77,16 @@ echo '<hr>';
 // *****************************************************************************
 // UGNJEŽĐIVANJE uvjetnih struktura
 
-$pada_kisa = TRUE;
-$trava_raste = FALSE;
+$pada_kisa = true;
+$trava_raste = false;
 if ($pada_kisa) {
     if ($trava_raste) {
-        echo "Pada kiša, trava raste.";
+        echo 'Pada kiša, trava raste.';
     } else {
-        echo "Pada kiša, ali trava ne raste!?";
+        echo 'Pada kiša, ali trava ne raste!?';
     }
 } else {
-    echo "Ne pada kiša.";
+    echo 'Ne pada kiša.';
 }
 
 echo '<hr>';
@@ -95,11 +95,11 @@ echo '<hr>';
 // UGNJEŽĐIVANJE uvjetnih struktura
 
 if ($pada_kisa && $trava_raste) {
-    echo "Pada kiša, trava raste.";
-} else if ($pada_kisa && !$trava_raste) {
-    echo "Pada kiša, ali trava ne raste!?";
+    echo 'Pada kiša, trava raste.';
+} elseif ($pada_kisa && !$trava_raste) {
+    echo 'Pada kiša, ali trava ne raste!?';
 } else {
-    echo "Ne pada kiša.";
+    echo 'Ne pada kiša.';
 }
 
 echo '<hr>';

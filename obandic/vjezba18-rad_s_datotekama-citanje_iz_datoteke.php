@@ -7,5 +7,5 @@ $filename = 'vjezba18-popis_lektire_za_maturu.txt';
 $datoteka = file($filename);
 
 foreach ($datoteka as $brojred => $red) {
-    echo ($brojred + 1) . '. ' . $red . '<br>';
+    echo($brojred + 1).'. '.$red.'<br>';
 }

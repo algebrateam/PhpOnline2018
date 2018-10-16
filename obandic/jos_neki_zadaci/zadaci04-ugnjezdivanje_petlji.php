@@ -38,7 +38,7 @@ echo '<hr>';
 
 for ($i = 1; $i <= 10; $i++) {
     for ($j = 1; $j <= 10; $j++) {
-        echo $i * $j . ' ';
+        echo $i * $j.' ';
     }
     echo '<br />';
 }
@@ -54,7 +54,7 @@ for ($i = 1; $i <= 10; $i++) {
     echo '<tr align="center" valign="middle">';
     for ($j = 1; $j <= 10; $j++) {
         echo '<td>';
-        echo $i * $j . ' ';
+        echo $i * $j.' ';
         echo '</td>';
     }
     echo '</tr>';
@@ -70,7 +70,7 @@ echo '<hr>';
 $counter = 1; // broji uređene parove
 for ($i = 0; $i <= 10; $i++) {
     for ($j = 0; $j <= 10; $j++) {
-        echo '(' . $i . ', ' . $j . ') ';
+        echo '('.$i.', '.$j.') ';
         $counter++;
         if ($counter > 110) {
             break 2;
@@ -92,7 +92,7 @@ for ($i = 0; $i <= 10; $i++) {
             continue 2;
         }
 
-        echo '(' . $i . ', ' . $j . ') ';
+        echo '('.$i.', '.$j.') ';
     }
 }
 
