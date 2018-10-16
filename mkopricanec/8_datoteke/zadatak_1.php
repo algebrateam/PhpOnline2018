@@ -31,12 +31,12 @@
 <?php
 
 if (isset($_GET['Potvrdi'])) {
-$filename='data.txt';
-$mode = 'a+';
+    $filename = 'data.txt';
+    $mode = 'a+';
 
-$handle = fopen($filename,$mode);
-fwrite($handle, $_GET["Broj"].','.$_GET["Ime"].','.$_GET["Datum"].','.$_GET["Prolaz"]."\n");
-fclose($handle);
+    $handle = fopen($filename, $mode);
+    fwrite($handle, $_GET['Broj'].','.$_GET['Ime'].','.$_GET['Datum'].','.$_GET['Prolaz']."\n");
+    fclose($handle);
 }
 
 ?>
