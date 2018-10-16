@@ -88,6 +88,10 @@ if (is_file($filename)) {
 
     foreach ($rows as $row) {
         $rowEntry = explode(',', $row);
+        
+        if(!isset($rowEntry[2]) || $rowEntry[2]==''){
+            break;
+        }
         //print_r($rowEntry);
 
         setlocale(LC_TIME, 'hr_HR');
