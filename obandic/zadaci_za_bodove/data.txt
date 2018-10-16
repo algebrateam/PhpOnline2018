@@ -1,0 +1,40 @@
+12345678901
+Ana Anić
+2018-10-01
+prolaz
+12345678902
+Mate Matić
+2018-10-02
+pad
+12345678903
+Iva Ivić
+2018-10-03
+pad
+12345678904
+Pero Perić
+2018-10-04
+prolaz
+12345678905
+Petra Petrović
+2018-10-05
+prolaz
+12345678906
+Ante Antić
+2018-10-08
+prolaz
+12345678907
+Marta Martć
+2018-10-09
+prolaz
+12345678908
+Luka Lukić
+2018-10-10
+pad
+12345678909
+Kate Katić
+2018-10-11
+prolaz
+12345678900
+Duje Dujmović
+2018-10-12
+prolaz
