@@ -41,7 +41,7 @@ Forma sprema podatke u datoteku data.txt
 
 if (isset($_POST['potvrdi'])) {
     $filename = './data.txt';
-    file_put_contents($filename, $_POST['broj'] . ', ' . $_POST['unos'] . ', ' . $_POST['datum'] . ', ' . $_POST['boje']."\r\n", FILE_APPEND);
+    file_put_contents($filename, $_POST['broj'].', '.$_POST['unos'].', '.$_POST['datum'].', '.$_POST['boje']."\r\n", FILE_APPEND);
 }
 
 /*
@@ -53,55 +53,49 @@ echo '<hr>Zadatak 2.<br>';
 
 $filename = './data.txt';
 if (is_file($filename)) {
-
     $file = file_get_contents($filename);
     $rows = explode("\n", $file);
 
-    $html = "<table border =1>";
-    $html = $html . "<tr><th>Broj</th><th>Tekst</th><th>Datum</th><th>Boja</th></tr>";
+    $html = '<table border =1>';
+    $html = $html.'<tr><th>Broj</th><th>Tekst</th><th>Datum</th><th>Boja</th></tr>';
 
     foreach ($rows as $row) {
-        $html = $html . "<tr>";
-        $rowEntry = explode(",", $row);
+        $html = $html.'<tr>';
+        $rowEntry = explode(',', $row);
         foreach ($rowEntry as $entry) {
-            $html = $html . "<td>" . $entry . "</td>";
+            $html = $html.'<td>'.$entry.'</td>';
         }
 
-        $html = $html . "</tr>";
+        $html = $html.'</tr>';
     }
 
-    $html = $html . "</table>";
+    $html = $html.'</table>';
 
     echo $html;
-} 
-else {
+} else {
     echo 'Datoteka data.txt ne postoji.';
 }
 
 /* Zadatak 3:
- * Uneseni datum prikazati kao 16. ožujak, 2018. 
+ * Uneseni datum prikazati kao 16. ožujak, 2018.
  */
 
 echo '<hr>Zadatak 3.<br>';
 
 if (is_file($filename)) {
-
     $file = file_get_contents($filename);
     $rows = explode("\n", $file);
 
+    foreach ($rows as $row) {
+        $rowEntry = explode(',', $row);
+        //print_r($rowEntry);
 
-
-foreach ($rows as $row) {
-    $rowEntry = explode(',', $row);
-    //print_r($rowEntry);
-
-    setlocale(LC_TIME, 'hr_HR');
-    echo '<br>';
-    echo strftime(" %d. %B, %Y.", strtotime($rowEntry[2]));
-    echo '<br>';
+        setlocale(LC_TIME, 'hr_HR');
+        echo '<br>';
+        echo strftime(' %d. %B, %Y.', strtotime($rowEntry[2]));
+        echo '<br>';
     }
-}
-else {
+} else {
     echo 'Datoteka data.txt ne postoji.';
 }
 
