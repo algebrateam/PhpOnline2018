@@ -88,8 +88,8 @@ if (is_file($filename)) {
 
     foreach ($rows as $row) {
         $rowEntry = explode(',', $row);
-        
-        if(!isset($rowEntry[2]) || $rowEntry[2]==''){
+
+        if (!isset($rowEntry[2]) || $rowEntry[2] == '') {
             break;
         }
         //print_r($rowEntry);
