@@ -1,6 +1,8 @@
 <?php
-interface IOpel {
- function korodiraj();
- function ispis();
-}
 
+interface IOpel
+{
+    public function korodiraj();
+
+    public function ispis();
+}

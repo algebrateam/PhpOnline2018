@@ -1,6 +1,6 @@
 <?php
 
-interface IZafira {
- function opcija7();
+interface IZafira
+{
+    public function opcija7();
 }
-

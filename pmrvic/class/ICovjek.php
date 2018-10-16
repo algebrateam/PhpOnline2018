@@ -1,8 +1,9 @@
 <?php
 
-interface ICovjek {  // Ime interfacea - sučelja  prvo veliko slovo
+interface ICovjek
+{  // Ime interfacea - sučelja  prvo veliko slovo
 
-    function set_ime($novo_ime);
+    public function set_ime($novo_ime);
 
-    function get_ime();
+    public function get_ime();
 }

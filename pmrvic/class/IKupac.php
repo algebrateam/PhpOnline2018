@@ -1,6 +1,7 @@
 <?php
 
-interface IKupac {  // Ime interfacea - sučelja  prvo veliko slovo
+interface IKupac
+{  // Ime interfacea - sučelja  prvo veliko slovo
 
-    function get_id();
+    public function get_id();
 }
