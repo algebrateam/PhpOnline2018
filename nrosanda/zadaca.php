@@ -3,10 +3,10 @@ if (isset($_POST['potvrdi'])) {
     $filename = './data.txt';
     $mode = 'a+';
     $handle = fopen($filename, $mode);
-    fwrite($handle, $_POST['broj'] . "\n");
-    fwrite($handle, $_POST['ime'] . "\n");
-    fwrite($handle, $_POST['datum'] . "\n");
-    fwrite($handle, $_POST['odluka'] . "\n");
+    fwrite($handle, $_POST['broj']."\n");
+    fwrite($handle, $_POST['ime']."\n");
+    fwrite($handle, $_POST['datum']."\n");
+    fwrite($handle, $_POST['odluka']."\n");
     fclose($handle);
 }
 $dat = file('./data.txt');
