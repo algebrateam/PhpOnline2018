@@ -1,7 +1,7 @@
 <?php
 
-include './Auto.php';
-include './IOpel.php';
+require_once './Auto.php';
+require_once './IOpel.php';
 // Its not even my final form  :)
 
 class Opel extends Auto implements IOpel
@@ -9,12 +9,8 @@ class Opel extends Auto implements IOpel
     public function korodiraj()
     {
     }
+public function ispis(){
+    
+}
 
-    public function ispis()
-    {
-        return ' '
-        .$this->brojsjedala
-            .' '
-            .$this->boja; // nastaviti....
-    }
 }
