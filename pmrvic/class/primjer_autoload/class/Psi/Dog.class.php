@@ -2,10 +2,10 @@
 
 namespace Psi;
 
-class Dog {
-
-  static function says() {
-    echo 'Wooof!';
-  }
-
+class Dog
+{
+    public static function says()
+    {
+        echo 'Wooof!';
+    }
 }
