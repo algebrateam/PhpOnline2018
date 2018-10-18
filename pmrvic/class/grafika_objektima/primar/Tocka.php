@@ -5,7 +5,7 @@ class Tocka implements ITocka
     private $x = 0;  // int
     private $y = 0;  // int
 
-    public function __construct($x, $y)
+    public function __construct(int $x, int $y)
     {
         $this->x = $x;
         $this->y = $y;
@@ -34,5 +34,12 @@ class Tocka implements ITocka
     public function tostring()
     {
         return 'Koordinata:('.$this->x.','.$this->y.')';
+    }
+    public function toCanvas()
+    {
+     //  ctx.arc(x,y,r, pocetni kut, krajnji kut)
+         printf ('ctx.beginPath();
+              ctx.arc(%d,%d,%d,0,2*Math.PI);  
+              ctx.stroke();',$this->getx(),-$this->gety(),1);
     }
 }

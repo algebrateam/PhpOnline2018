@@ -43,3 +43,11 @@ echo "<hr>";
 $Krug2= new Krug($T2,$T3);  // 0,0-4,0
 echo $Krug2;
 
+echo "<hr>";
+$Krug3= new Krug($T1,5);  // središte: 0,0  redijus:5  
+echo $Krug3;
+
+echo "<hr>";
+echo new Krug($T1,7);  // središte: 0,0  redijus:5  
+
+
