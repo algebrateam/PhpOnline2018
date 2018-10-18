@@ -13,10 +13,22 @@ class Opel extends Auto implements IOpel
     public function ispis()
     {
         return ' '
-        .$this->brojsjedala
-            .' '
-        .$this->boja; // nastaviti
-            
-            
+      .$this->brojsjedala
+      .' '     
+      .$this->potrosnja // nastaviti
+      .' '
+      .$this->boja
+      .' '
+      .$this->kilovata; 
+      
+      
+      
+                
     }
+    
 }
+        
+            
+            
+    
+

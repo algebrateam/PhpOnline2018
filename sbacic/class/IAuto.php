@@ -1,6 +1,6 @@
 <?php
 
-interface IAuto
+    interface IAuto
 {
     public function vozi();
 
