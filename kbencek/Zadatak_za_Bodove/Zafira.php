@@ -3,10 +3,7 @@
 include './Opel.php';
 include './IZafira.php';
 
-
-
 class Zafira extends Opel implements IZafira
-
 {
     public function opcija7($Z1)
     {
