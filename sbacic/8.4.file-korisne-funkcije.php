@@ -35,4 +35,3 @@ if (is_dir($dirname)) {
     echo '<br>direktorij ne postoji, nemam što brisati';
 }
 //  za brisanje datoteke koristiti unset() ili unlink()
-

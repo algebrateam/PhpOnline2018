@@ -39,4 +39,3 @@ mini();
 if (function_exists($func_name)) {
     $func_name(13);
 }
-

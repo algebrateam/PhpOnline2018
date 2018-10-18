@@ -14,21 +14,11 @@ class Opel extends Auto implements IOpel
     {
         return ' '
       .$this->brojsjedala
-      .' '     
+      .' '
       .$this->potrosnja // nastaviti
       .' '
       .$this->boja
       .' '
-      .$this->kilovata; 
-      
-      
-      
-                
+      .$this->kilovata;
     }
-    
 }
-        
-            
-            
-    
-

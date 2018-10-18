@@ -10,24 +10,18 @@ class Zafira extends Opel implements IZafira
         $this->brojsjedala = 7;
     }
 
-    public function potrosnja5() 
+    public function potrosnja5()
     {
         $this->potrosnja = 5;
-  }
-    public function gume4() 
+    }
+
+    public function gume4()
     {
         $this->gume = 4;
     }
-    public function brisaci2() 
+
+    public function brisaci2()
     {
         $this->brisaci = 2;
+    }
 }
-
-   
-    
-  }
-
-
-
-
-
