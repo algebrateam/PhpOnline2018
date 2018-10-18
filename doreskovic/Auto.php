@@ -5,7 +5,6 @@ abstract class Auto implements IAuto
 {
     public $potrosnja;
     public $brojsjedala;
-	
 
     public function gazi()
     {

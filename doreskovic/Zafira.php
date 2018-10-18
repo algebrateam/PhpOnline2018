@@ -7,13 +7,13 @@ $Z1 = new Opel('Zafira');
 $Z1->boja = 'Zelena';
 class Zafira extends Opel implements IZafira
 {
-    
-	public function ispis()
+    public function ispis()
     {
-        printf($this->brojsjedala   
-                );     
+        printf($this->brojsjedala
+                );
     }
-	public $brojsjedala=7; // popstavi da vouzilo ima 7 sjedala !
+
+    public $brojsjedala = 7; // popstavi da vouzilo ima 7 sjedala !
 }
 
 $Z1->vozi();

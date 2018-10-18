@@ -27,6 +27,3 @@ echo '<table border=1>'
     .'</td>'
     .'</tr>'
     .'</table>';
-
-	
-	
