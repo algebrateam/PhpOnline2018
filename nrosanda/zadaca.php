@@ -3,13 +3,17 @@ if (isset($_POST['potvrdi'])) {
     $filename = './data.txt';
     $mode = 'a+';
     $handle = fopen($filename, $mode);
-    fwrite($handle, $_POST['broj']."\n");
-    fwrite($handle, $_POST['ime']."\n");
-    fwrite($handle, $_POST['datum']."\n");
-    fwrite($handle, $_POST['odluka']."\n");
+    fwrite($handle, $_POST['broj']
+            . ', '
+            . $_POST['ime']
+            . ', '
+            . $_POST['datum']
+            . ', '
+            . $_POST['odluka']
+            . "\n");
+
     fclose($handle);
 }
-$dat = file('./data.txt');
 ?>
 
 <!DOCTYPE html>
@@ -35,42 +39,37 @@ and open the template in the editor.
                 <option>Prolaz</option>
             </select>
             <input name="potvrdi" type="submit">
+        </form>
+        <table border="1">
 
+            <tr>
+
+                <th>Broj</th>
+                <th>Ime</th>
+                <th>Datum</th>
+                <th>Odluka</th>
+            </tr>
             <?php
             if (file_exists($filename)) {
-                echo '<table border="1" width="300">';
-                echo '<thead>';
-                echo '<tr>';
-                echo '<th>';
-                echo 'Broj';
-                echo '</th>';
-                echo ' <th>Ime</th>';
-                echo '<th>Datum</th>';
-                echo '<th>';
-                echo 'Odluka';
-                echo '</th>';
-                echo '</tr>';
-                echo '</thead>';
-                echo '<tbody>';
-                echo ' <tr>';
-                echo '<td>';
-                echo $_POST['broj'];
-                echo '</td>';
-                echo '<td>';
-                echo $_POST['ime'];
-                echo '</td>';
-                echo '<td>';
-                echo '16.Ožujak.2018.';
-                echo '</td>';
-                echo '<td>';
-                echo $_POST['odluka'];
-                echo '</td>';
-                echo '</tr>';
-                echo '</tbody>';
-                echo '</table>';
+                $filename = './data.txt';
+                $mode = 'rb';
+                $handle = fopen($filename, $mode);
+
+                while (!feof($handle)) {
+
+                    $parts = explode('"\n"', $filename);
+                    $line = fgets($handle);
+                    $part = explode(', ', $line);
+                    echo '<tr><td>' . $part[0] . '</td>'
+                    . '<td>' . $part[1] . '</td>'
+                    . '<td>' . $part[2] . '</td>'
+                    . '<td>' . $part[3] . '</td>';
+                }
+                fclose($handle);
             }
             ?>
-        </form> 
+
+        </table>
 
     </body>
 </html>
