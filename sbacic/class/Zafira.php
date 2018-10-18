@@ -1,7 +1,7 @@
 <?php
 
-include './Opel.php';
-include './IZafira.php';
+include_once './Opel.php';
+include_once './IZafira.php';
 class Zafira extends Opel implements IZafira
 {
     public function opcija7()

@@ -1,7 +1,7 @@
 <?php
 
-include './Opel.php';
-include './IAstra.php';
+include_once './Opel.php';
+include_once './IAstra.php';
 class Astra extends Opel implements IAstra
 {
     public function stedljiva()

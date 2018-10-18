@@ -1,7 +1,7 @@
 <?php
 
-include './Astra.php';
-include './Zafira.php';
+include_once './Astra.php';
+include_once './Zafira.php';
 
 $A1 = new Astra();
 $A1->boja = 'Plava';

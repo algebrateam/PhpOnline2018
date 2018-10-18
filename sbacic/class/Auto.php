@@ -5,6 +5,7 @@ abstract class Auto implements IAuto
 {
     protected $potrosnja;
     protected $brojsjedala;
+    protected $kilovata;
 
     public function gazi()
     {

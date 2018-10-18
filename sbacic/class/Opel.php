@@ -1,7 +1,7 @@
 <?php
 
-include './Auto.php';
-include './IOpel.php';
+include_once './Auto.php';
+include_once './IOpel.php';
 // Its not even my final form  :)
 
 class Opel extends Auto implements IOpel
