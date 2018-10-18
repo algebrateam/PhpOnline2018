@@ -9,8 +9,8 @@ class Opel extends Auto implements IOpel
     public function korodiraj()
     {
     }
-public function ispis(){
-    
-}
 
+    public function ispis()
+    {
+    }
 }
