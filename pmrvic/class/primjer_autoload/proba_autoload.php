@@ -12,6 +12,7 @@ include 'autoload.php';
 use Macke as feline;
 use Psi as canine;
 Use \Macke\Cat as maca;
+Use \Macke\Jaguar;
 
 echo \Macke\Cat::says(). "<br />\n";
 echo \Psi\Dog::says(). "<br />\n";
@@ -44,5 +45,10 @@ try {
   echo "Trace: \n" . $e->getTraceAsString() . "\n\n";
 }
 echo "<hr> nastavak iza exceptiona<br>";
-  
-  
+
+echo "<hr><h3>Kreiramo jaguara</h3>";
+$J1=new \Macke\Jaguar();
+echo $J1->grizi();
+  echo " <br>";
+$J2=new Jaguar();
+echo $J2->grizi();  
