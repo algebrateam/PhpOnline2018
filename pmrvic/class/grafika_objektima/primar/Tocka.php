@@ -1,5 +1,7 @@
 <?php
+
 namespace primar;
+
 class Tocka implements ITocka
 {
     private $x = 0;  // int
@@ -35,11 +37,12 @@ class Tocka implements ITocka
     {
         return 'Koordinata:('.$this->x.','.$this->y.')';
     }
+
     public function toCanvas()
     {
-     //  ctx.arc(x,y,r, pocetni kut, krajnji kut)
-         printf ('ctx.beginPath();
+        //  ctx.arc(x,y,r, pocetni kut, krajnji kut)
+        printf('ctx.beginPath();
               ctx.arc(%d,%d,%d,0,2*Math.PI);  
-              ctx.stroke();',$this->getx(),-$this->gety(),1);
+              ctx.stroke();', $this->getx(), -$this->gety(), 1);
     }
 }

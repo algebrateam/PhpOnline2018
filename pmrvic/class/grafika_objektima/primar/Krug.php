@@ -1,5 +1,7 @@
 <?php
+
 namespace primar;
+
 //require_once 'ITocka.php';
 //require_once 'Tocka.php';
 
@@ -12,23 +14,22 @@ class Krug
     public function __construct(Tocka $k1, $k2)
     {
         $this->k1 = $k1;
-        
-        if($k2 instanceof Tocka){
-        $this->k2 = $k2;
-        $this->r = (new Linija($k1, $k2))->duljina();
-        }
-        else if(gettype($k2)=='integer'){        
-        $this->r = $k2;
-        $this->k2 = new Tocka($this->k1->getx()+$this->r, $this->k1->gety());
+
+        if ($k2 instanceof Tocka) {
+            $this->k2 = $k2;
+            $this->r = (new Linija($k1, $k2))->duljina();
+        } elseif (gettype($k2) == 'integer') {
+            $this->r = $k2;
+            $this->k2 = new Tocka($this->k1->getx() + $this->r, $this->k1->gety());
         }
     }
-    
+
     public function constructr(Tocka $k1, int $r)
     {
         $this->k1 = $k1;
         $this->r = $r;
     }
-    
+
     public function opseg()
     {
         return 2 * $this->r * pi();
@@ -50,11 +51,12 @@ class Krug
         .' Povrsina:'
             .$this->povrsina();
     }
-     public function toCanvas()
+
+    public function toCanvas()
     {
-     //  ctx.arc(x,y,r, pocetni kut, krajnji kut)
-         printf ('ctx.beginPath();
+        //  ctx.arc(x,y,r, pocetni kut, krajnji kut)
+        printf('ctx.beginPath();
               ctx.arc(%d,%d,%d,0,2*Math.PI);  
-              ctx.stroke();',$this->k1->getx(),-$this->k1->gety(),$this->r);
+              ctx.stroke();', $this->k1->getx(), -$this->k1->gety(), $this->r);
     }
 }

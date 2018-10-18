@@ -1,8 +1,9 @@
 <?php
 require_once 'autoload.php';
-use primar\Tocka;
-use primar\Linija;
 use primar\Krug;
+use primar\Linija;
+use primar\Tocka;
+
 ?>
 
 <!DOCTYPE html>
@@ -37,12 +38,12 @@ var ctx = c.getContext("2d");
 ctx.strokeStyle="#00FF00";
   //Kruznice: 
 <?php
- (new Krug(new Tocka(-50, 50),70))->toCanvas();
- (new Krug(new Tocka(-100, 100),70))->toCanvas();
- (new Krug(new Tocka(-20, 75),70))->toCanvas();
- (new Krug(new Tocka(-70,30),70))->toCanvas();
- (new Krug(new Tocka(135, 150),70))->toCanvas();
- (new Krug(new Tocka(0, 0),70))->toCanvas();
+ (new Krug(new Tocka(-50, 50), 70))->toCanvas();
+ (new Krug(new Tocka(-100, 100), 70))->toCanvas();
+ (new Krug(new Tocka(-20, 75), 70))->toCanvas();
+ (new Krug(new Tocka(-70, 30), 70))->toCanvas();
+ (new Krug(new Tocka(135, 150), 70))->toCanvas();
+ (new Krug(new Tocka(0, 0), 70))->toCanvas();
 ?>
 
 ctx.beginPath();
@@ -51,10 +52,10 @@ ctx.strokeStyle="#FF0000";
 <?php
  (new Tocka(20, 20))->toCanvas();
  (new Tocka(40, 40))->toCanvas();
- $tockearray=[[0,45],[20,70],[30,75],[-40,36],[-40,-40],[100,150],[89,145]];
+ $tockearray = [[0, 45], [20, 70], [30, 75], [-40, 36], [-40, -40], [100, 150], [89, 145]];
  foreach ($tockearray as $t) {
-     (new Tocka($t[0],$t[1]))->toCanvas();
-}
+     (new Tocka($t[0], $t[1]))->toCanvas();
+ }
 ?>
 
 ctx.beginPath();
@@ -67,14 +68,15 @@ ctx.strokeStyle="#FF00FF";
 ctx.beginPath();
 ctx.strokeStyle="#0000FF";
 <?php
-function kvadratna($a,$b){
-    for($i=-10;$i<=10;$i+=0.2){
-     (new Tocka($a+$i,($i*$i)+$b))->toCanvas();
+function kvadratna($a, $b)
+{
+    for ($i = -10; $i <= 10; $i += 0.2) {
+        (new Tocka($a + $i, ($i * $i) + $b))->toCanvas();
     }
 }
-kvadratna(-40,-50);
-kvadratna(-140,-140);
-kvadratna(70,-150);
+kvadratna(-40, -50);
+kvadratna(-140, -140);
+kvadratna(70, -150);
 ?>   
 
 
