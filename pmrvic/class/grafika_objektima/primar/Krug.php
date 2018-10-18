@@ -9,7 +9,7 @@ class Krug
     private $k2;  // koord radijusa
     private $r;
 
-    public function __construct($k1, $k2)
+    public function __construct(Tocka $k1, Tocka $k2)
     {
         $this->k1 = $k1;
         $this->k2 = $k2;
@@ -27,7 +27,7 @@ class Krug
         return $this->r * $this->r * pi();
     }
 
-    public function tostring()
+    public function __toString()
     {
         return 'ispis kruznice '
         .$this->k1->tostring()

@@ -32,12 +32,14 @@ echo $L2->tostring();
 echo "<hr>";
 $L3= new Linija($T2,$T3);
 echo $L3->tostring();
+echo "<br>Ispis pomoći magic metode __toString():<br>";
+echo $L3;
 
 echo "<hr>";
 $Krug1= new Krug($T1,$T2);  // 0,0-4,0
-echo $Krug1->tostring();
+echo $Krug1;
 
 echo "<hr>";
 $Krug2= new Krug($T2,$T3);  // 0,0-4,0
-echo $Krug2->tostring();
+echo $Krug2;
 

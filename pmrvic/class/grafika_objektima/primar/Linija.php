@@ -8,7 +8,8 @@ class Linija
     private $k1;  // Tocka
     private $k2;  // Tocka
 
-    public function __construct($k1, $k2)
+    //public function __construct($k1,$k2) // mozemo ubaciti bilo koji tip 
+    public function __construct(Tocka $k1, Tocka $k2)  // moramo predati objekt tipa Tocka
     {
         $this->k1 = $k1;
         $this->k2 = $k2;
@@ -23,6 +24,15 @@ class Linija
     }
 
     public function tostring()
+    {
+        return 'ispis linije return '
+        .$this->k1->tostring()
+            .' '
+            .$this->k2->tostring()
+            .' Duljina:'
+            .$this->duljina();
+    }
+    public function __toString()
     {
         return 'ispis linije return '
         .$this->k1->tostring()
