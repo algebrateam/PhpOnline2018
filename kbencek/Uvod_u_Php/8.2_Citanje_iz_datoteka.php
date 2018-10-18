@@ -1,8 +1,8 @@
 <?php
 
-/* 
+/*
  * @author KBencek
- * 
+ *
 Modes	Description
 
 r	Open a file for read only. File pointer starts at the beginning of the file
@@ -22,15 +22,13 @@ x+	Creates a new file for read/write. Returns FALSE and an error if file already
 
 // 'polaznici.txt'; -->direktan pristup u istom direktoriju
 // ./polaznici.txt'; --> relativna putanja od trenutnog direktorija
-// '/kbencek/polaznici.txt´ --> apsolutna putanja 
+// '/kbencek/polaznici.txt´ --> apsolutna putanja
 
-
-$filename = "polaznici.php"; //najispravnije rjesenje 
+$filename = 'polaznici.php'; //najispravnije rjesenje
 $mode = 'r';
-$handle= fopen($filename, $mode); // handle je tipa resource
+$handle = fopen($filename, $mode); // handle je tipa resource
 
-$contents= fread($handle, filesize($filename));
+$contents = fread($handle, filesize($filename));
 fclose($handle);
 
 echo $contents;
-
