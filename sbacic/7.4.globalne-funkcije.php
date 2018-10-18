@@ -14,4 +14,3 @@ function inc_a()
 }
 echo $a;
 inc_a();
-

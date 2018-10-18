@@ -8,26 +8,26 @@ abstract class Auto implements IAuto
 
     public function gazi()
     {
-      echo '<br>Gazim!';
+        echo '<br>Gazim!';
     }
 
     public function pali()
     {
-      echo '<br>Zapalio!';
+        echo '<br>Zapalio!';
     }
 
     public function skreni()
     {
-      echo '<br>Skrecem!';
+        echo '<br>Skrecem!';
     }
 
     public function stani()
     {
-      echo '<br>Stajem!';
+        echo '<br>Stajem!';
     }
 
     public function vozi()
     {
-      echo '<br>Vozim!';
+        echo '<br>Vozim!';
     }
 }

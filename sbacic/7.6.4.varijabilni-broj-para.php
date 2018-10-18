@@ -1,6 +1,6 @@
 <?php
 
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -12,6 +12,7 @@ function zbroj($a = 0, $bb = 5, $ccc = 7)
     foreach (func_get_args() as $value) {
         $sum += $value;
     }
+
     return $sum;
 }
 echo zbroj(4, 7);

@@ -9,16 +9,15 @@ class Astra extends Opel implements IAstra
         // postavi da vozilo troši ispod 3 l/100km
     }
 
-  public function brzina100() {
-    
-  }
+    public function brzina100()
+    {
+    }
 
-  public function starost10() {
-    
-  }
+    public function starost10()
+    {
+    }
 
-  public function stedljiva3() {
-    
-  }
-
+    public function stedljiva3()
+    {
+    }
 }

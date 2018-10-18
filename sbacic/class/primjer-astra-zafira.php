@@ -8,7 +8,6 @@ $A1->boja = 'Plava';
 $Z1 = new Zafira();
 $Z1->boja = 'Crvena';
 
-
 echo '<h1>Usporedba vozila</h1>';
 
 echo '<table border=1>'
