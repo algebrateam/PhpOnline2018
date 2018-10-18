@@ -1,5 +1,7 @@
 <?php
+
 namespace primar;
+
 //require_once 'ITocka.php';
 //require_once 'Tocka.php';
 
