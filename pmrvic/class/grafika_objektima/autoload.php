@@ -6,7 +6,8 @@
 
 
     // Your custom class dir
-    define('CLASS_DIR', 'class/');
+    //define('CLASS_DIR', 'class/');
+    define('CLASS_DIR', 'class/grafika_objektima/');
 
     // Add your class dir to include path
     //set_include_path(get_include_path().PATH_SEPARATOR.CLASS_DIR);

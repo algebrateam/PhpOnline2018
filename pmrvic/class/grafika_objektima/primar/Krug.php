@@ -1,7 +1,7 @@
 <?php
-
-require_once 'ITocka.php';
-require_once 'Tocka.php';
+namespace primar;
+//require_once 'ITocka.php';
+//require_once 'Tocka.php';
 
 class Krug{
     private $k1;  // središte

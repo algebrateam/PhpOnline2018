@@ -1,5 +1,5 @@
 <?php
-
+namespace primar;
 class Tocka implements ITocka{
     private $x=0;  // int
     private $y=0;  // int
