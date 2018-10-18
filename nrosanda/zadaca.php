@@ -4,13 +4,13 @@ if (isset($_POST['potvrdi'])) {
     $mode = 'a+';
     $handle = fopen($filename, $mode);
     fwrite($handle, $_POST['broj']
-            . ', '
-            . $_POST['ime']
-            . ', '
-            . $_POST['datum']
-            . ', '
-            . $_POST['odluka']
-            . "\n");
+            .', '
+            .$_POST['ime']
+            .', '
+            .$_POST['datum']
+            .', '
+            .$_POST['odluka']
+            ."\n");
 
     fclose($handle);
 }
@@ -56,14 +56,13 @@ and open the template in the editor.
                 $handle = fopen($filename, $mode);
 
                 while (!feof($handle)) {
-
                     $parts = explode('"\n"', $filename);
                     $line = fgets($handle);
                     $part = explode(', ', $line);
-                    echo '<tr><td>' . $part[0] . '</td>'
-                    . '<td>' . $part[1] . '</td>'
-                    . '<td>' . $part[2] . '</td>'
-                    . '<td>' . $part[3] . '</td>';
+                    echo '<tr><td>'.$part[0].'</td>'
+                    .'<td>'.$part[1].'</td>'
+                    .'<td>'.$part[2].'</td>'
+                    .'<td>'.$part[3].'</td>';
                 }
                 fclose($handle);
             }
