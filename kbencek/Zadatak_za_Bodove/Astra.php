@@ -2,10 +2,11 @@
 
 include './Opel.php';
 include './IAstra.php';
+
 class Astra extends Opel implements IAstra
 {
-    public function stedljiva()
+    public function stedljiva($A1)
     {
-        // postavi da vozilo troši ispod 3 l/100km
+        $this->potrosnja = 3 / 100;
     }
 }

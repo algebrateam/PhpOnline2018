@@ -6,7 +6,7 @@ include './IOpel.php';
 
 class Opel extends Auto implements IOpel
 {
-    public function korodiraj()
+    public function korodiraj($A1, $Z1)
     {
     }
 
@@ -15,6 +15,6 @@ class Opel extends Auto implements IOpel
         return ' '
         .$this->brojsjedala
             .' '
-            .$this->boja; // nastaviti....
+            .$this->boja;
     }
 }

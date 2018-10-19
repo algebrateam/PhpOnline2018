@@ -1,11 +1,12 @@
 <?php
 
-include './Astra.php';
-include './Zafira.php';
+include_once './Astra.php';
+include_once './Zafira.php';
 
 $A1 = new Astra();
 $A1->boja = 'Plava';
 $Z1 = new Zafira();
+$Z1->boja = 'Crvena';
 
 echo '<h1>Usporedba vozila</h1>';
 
