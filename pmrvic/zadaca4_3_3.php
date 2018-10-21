@@ -11,3 +11,5 @@ $a++;
 echo $a;
 $a--;
 echo $a;
+$a--;
+echo $a;
