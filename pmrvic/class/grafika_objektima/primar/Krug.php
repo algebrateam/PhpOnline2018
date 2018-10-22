@@ -24,12 +24,6 @@ class Krug
         }
     }
 
-    public function constructr(Tocka $k1, int $r)
-    {
-        $this->k1 = $k1;
-        $this->r = $r;
-    }
-
     public function opseg()
     {
         return 2 * $this->r * pi();
