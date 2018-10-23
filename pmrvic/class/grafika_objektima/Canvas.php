@@ -62,7 +62,7 @@ ctx.beginPath();
 ctx.strokeStyle="#FF00FF";  
 // Linije
 <?php
- (new Linija(new Tocka(20, 20), new Tocka(200, 200)))->toCanvas();
+ (new Linija(new Tocka(50, 50), new Tocka(150, -30)))->toCanvas();
 ?>    
 
 ctx.beginPath();
@@ -70,7 +70,7 @@ ctx.strokeStyle="#0000FF";
 <?php
 function kvadratna($a, $b)
 {
-    for ($i = -10; $i <= 10; $i += 0.2) {
+    for ($i = -20; $i <= 20; $i += 0.4) {
         (new Tocka($a + $i, ($i * $i) + $b))->toCanvas();
     }
 }
