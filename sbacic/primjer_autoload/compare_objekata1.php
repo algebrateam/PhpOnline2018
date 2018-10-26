@@ -1,0 +1,50 @@
+<?php
+
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+class Pas
+{
+    public $name;
+    public $tezina;
+
+    public function __construct($name, $tezina)
+    {
+        $this->name = $name;
+        $this->tezina = $tezina;
+    }
+
+    /* This is the static comparing function: */
+    public static function cmp_obj($a, $b)
+    {
+        $al = $a->tezina;
+        $bl = $b->tezina;
+        if ($al == $bl) {
+            return 0;
+        }
+
+        return ($al > $bl) ? +1 : -1;
+    }
+}
+
+$a[] = new Pas('Dzeki', 2);
+$a[] = new Pas('Fido', 8);
+$a[] = new Pas('Floki', 11);
+$a[] = new Pas('Mrto', 3);
+$a[] = new Pas('brljo', 5);
+$a[] = new Pas('Lajka', 9);
+
+foreach ($a as $item) {
+    echo $item->name."\n";
+}
+echo '<br>';
+//usort($a, array ("Pas","cmp_obj"));
+
+usort($a, 'Pas::cmp_obj');
+
+foreach ($a as $item) {
+    echo $item->name."\n";
+}
