@@ -6,10 +6,18 @@
  * and open the template in the editor.
  */
 
-$a = 5;
-$a++;
-echo $a;
-$a--;
-echo $a;
-$a--;
-echo $a;
+/**
+ * @author pmrvic
+ */
+interface IAuto
+{
+    public function vozi();
+
+    public function stani();
+
+    public function skreni();
+
+    public function gazi();
+
+    public function pali();
+}

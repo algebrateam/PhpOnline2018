@@ -9,13 +9,13 @@
 /* primjer polja kada kljucevi polja nisu brojcani vec tekstualni
  */
 
-$ucenik = ['1'       => ['naziv' => 'Marko', 'prezime' => 'Cetina'],
-                 '2' => ['naziv' => 'Ljubica', 'prezime' => 'Ljubicica'],
-                 '3' => ['naziv' => 'Bica', 'prezime' => 'Bicica'], ];
+$ucenik = ['1' => ['naziv' => 'Marko', 'prezime' => 'Cetina'],
+    '2' => ['naziv' => 'Ljubica', 'prezime' => 'Ljubicica'],
+    '3' => ['naziv' => 'Bica', 'prezime' => 'Bicica'],];
 
 foreach ($ucenik as $br_ljudi => $podaci) {
     foreach ($podaci as $naziv_podataka => $vrijednost_podataka) {
-        echo '<br>Ucenik br.'.$br_ljudi.' - '.$naziv_podataka.': '.$vrijednost_podataka;
+        echo '<br>Ucenik br.' . $br_ljudi . ' - ' . $naziv_podataka . ': ' . $vrijednost_podataka;
     }
 }
 
@@ -40,7 +40,7 @@ echo '<br>Ili<br>';
 
 foreach ($multi_array as $elem) {
     foreach ($elem as $val) {
-        echo $val.'<br>';
+        echo $val . '<br>';
     }
 }
 
@@ -124,7 +124,7 @@ $br_elementa = 0;
 foreach ($fruits as $val) {
     $br_elementa++;
 }
-echo $br_elementa.'<br>';
+echo $br_elementa . '<br>';
 
 echo 'Ili<br>';
 
@@ -137,8 +137,9 @@ echo '<br><hr><br>';
  */
 
 foreach ($fruits as $key => $val) {
+    
 }
-echo $val.'<br>';
+echo $val . '<br>';
 
 echo '<br><hr><br>';
 
@@ -149,10 +150,10 @@ foreach ($fruits as $key => $val) {
         break;
     }
 }
-echo $key.'<br>';
+echo $key . '<br>';
 
 $key = array_search('banana', $fruits);
-echo $key.'<br>';
+echo $key . '<br>';
 
 if (in_array('banana', $fruits)) {
     echo 'banana pronadena, misija ispunjena<br>';
