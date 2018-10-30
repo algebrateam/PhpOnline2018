@@ -6,10 +6,12 @@
  * and open the template in the editor.
  */
 
-$a = 5;
-$a++;
-echo $a;
-$a--;
-echo $a;
-$a--;
-echo $a;
+/**
+ * @author pmrvic
+ */
+interface IAutomobil
+{
+    public function get_model(); // vraća npr, Honda, Mazda
+
+    public function ispis(); // kompletan ispis svih svojstava
+}
