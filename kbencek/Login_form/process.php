@@ -1,4 +1,8 @@
 <?php
+if(!isset($_POST['user'])){
+header("Location: login.html");
+die();
+}
 
 $username = $_POST['user'];
 $password = $_POST['pass'];
