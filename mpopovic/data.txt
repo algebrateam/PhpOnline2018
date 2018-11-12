@@ -5,3 +5,4 @@
 31, Katarina, 1987-06-07, žuta
 31, Katarina, 1987-06-07, žuta
 31, Katarina, 1987-06-07, žuta
+29, Barna, 1988-12-04, crvena
