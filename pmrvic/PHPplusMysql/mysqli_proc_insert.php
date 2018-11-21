@@ -30,8 +30,23 @@ include_once './dbconn_proc.php';
        echo "</pre>";
       echo mysqli_error($link); //Returns the last error description for the most recent function call
       
-      
-      
+      /**
+     * PRIMJER kada se inserta zapis za koji već postoji primary key
+     * 
+     * broj insertanih / update / ili delete redova:-1
+      1062
+      Array
+      (
+      [0] => Array
+      (
+      [errno] => 1062
+      [sqlstate] => 23000
+      [error] => Duplicate entry '1521' for key 'PRIMARY'
+      )
+
+      )
+      Duplicate entry '1521' for key 'PRIMARY'
+     */
     ?>
       
 </body>
