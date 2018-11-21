@@ -35,5 +35,5 @@ if (isset($_GET['potvrda'])) {
     $handle = fopen($filename, $mode);
     fwrite($handle, $_GET['ime'].' '.$_GET['broj'].' '.$_GET['datum'].' '.
             $_GET['Rezultat']."\n");
-    fclose($handle);
+    fclose($handle);        
 }
