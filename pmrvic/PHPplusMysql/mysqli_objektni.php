@@ -4,23 +4,82 @@ include_once './dbconn.php';
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>TODO supply a title</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <div>
-      <?php
-      $query ="SELECT * FROM stud LIMIT 50";
-      $result= $mysqli->query($query);
-      while ($row = $result->fetch_assoc()) {
-          echo $row['imeStud']." ".$row['prezStud'].'</br>';
-      }
-    ?>
-    
-    </div>
-  </body>
+    <head>
+        <title>Objektni pristup mysqli</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            li:nth-child(odd) { color:chocolate}
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <?php
+            $query = "SELECT * FROM stud LIMIT 5";
+            $result = $mysqli->query($query);
+
+            echo "ispis pomoću asocijacija:<br>";
+            while ($row = $result->fetch_assoc()) {
+                echo $row['imeStud'] . " " . $row['prezStud'] . '</br>';
+            }
+
+            echo "<hr>";
+            echo "ispis pomoću indexa:<br>";
+
+            $query2 = "SELECT * FROM stud LIMIT 5";
+            $result2 = $mysqli->query($query2);
+
+            echo "<ul>";
+            while ($row = $result2->fetch_row()) {
+                echo "<li>" . $row[1] . " " . $row[2] . '</li>';
+            }
+            echo "</ul>";
+
+            // popunjanjavanje dropdown liste
+            $query_stud = "select * from stud "
+                . "INNER JOIN ispit ON stud.mbrStud=ispit.mbrStud "
+                . "ORDER BY ispit.ocjena DESC LIMIT 5";
+            $studenti = $mysqli->query($query_stud);
+            
+            $query_stud1 = "select * from stud "
+                . "INNER JOIN ispit ON stud.mbrStud=ispit.mbrStud "
+                . "ORDER BY ispit.ocjena DESC LIMIT 5,25";
+            $studenti1 = $mysqli->query($query_stud1);
+            ?>
+
+
+        </div>
+        <div>
+            <form>
+
+                <select>
+                    <!-- repeater favoriti studenti -->
+                    <optgroup>
+                        <?php while ($row = $studenti->fetch_assoc()) { ?>
+                            <option value="<?= $row['prezStud'] ?>">
+                                <?= $row['imeStud'] ?>
+                            </option>
+                        <?php } ?>
+                    </optgroup>
+                    <option value disabled>————————</option>
+                        <?php while ($row = $studenti1->fetch_assoc()) { ?>
+                            <option value="<?= $row['prezStud'] ?>">
+                                <?= $row['imeStud'] ?>
+                            </option>
+                        <?php } ?>
+                </select>
+
+
+
+            </form>
+
+        </div>
+
+
+
+
+    </body>
 </html>
 <?php $mysqli->close(); ?>
 

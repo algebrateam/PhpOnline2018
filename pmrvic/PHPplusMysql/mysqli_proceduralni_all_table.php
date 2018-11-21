@@ -14,7 +14,7 @@ include_once './dbconn_proc.php';
             <?php
             $query = "SELECT * FROM stud LIMIT 9";  // fiksno- ne mjenjaj!
             #$query1 = "SELECT * FROM nastavnik LIMIT 17"; // flexi, stavi upit po želji
-            $query1 = "SELECT * FROM mjesto LIMIT 17"; // flexi, stavi upit po želji
+            $query1 = "select * from stud where pbrRod>40000 LIMIT 10,15"; // flexi, stavi upit po želji
             
             $result = mysqli_query($link, $query);
             $result1 = mysqli_query($link, $query1);
