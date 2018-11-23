@@ -21,6 +21,7 @@ include_once './dbconn.php';
             $result = $mysqli->query($query);
 
             echo "ispis pomoću asocijacija:<br>";
+            echo "Ukupno zapisa:(".$mysqli->affected_rows.")<br>";
             while ($row = $result->fetch_assoc()) {
                 echo $row['imeStud'] . " " . $row['prezStud'] . '</br>';
             }
