@@ -10,7 +10,8 @@ include_once './dbconn.php';
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             li:nth-child(odd) { color:chocolate}
-
+           #mbr1484 {background-color: goldenrod;
+           color:red}          
         </style>
     </head>
     <body>
@@ -55,16 +56,18 @@ include_once './dbconn.php';
 
                 <select>
                     <!-- repeater favoriti studenti -->
-                    <optgroup>
+                    <optgroup style="background-color: antiquewhite">
                         <?php while ($row = $studenti->fetch_assoc()) { ?>
-                            <option value="<?= $row['prezStud'] ?>">
+                            <option id="mbr<?= $row['mbrStud'] ?>" 
+                                    value="<?= $row['prezStud'] ?>">
                                 <?= $row['imeStud'] ?>
                             </option>
                         <?php } ?>
                     </optgroup>
                     <option value disabled>————————</option>
                         <?php while ($row = $studenti1->fetch_assoc()) { ?>
-                            <option value="<?= $row['prezStud'] ?>">
+                            <option id="mbr<?= $row['mbrStud'] ?>" 
+                                    value="<?= $row['prezStud'] ?>">
                                 <?= $row['imeStud'] ?>
                             </option>
                         <?php } ?>

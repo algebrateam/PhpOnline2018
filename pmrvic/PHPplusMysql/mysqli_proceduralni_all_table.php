@@ -8,6 +8,7 @@ include_once './dbconn_proc.php';
         <title>Popis studenata mysqli proceduralnim pristupom</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="table.css" type="text/css"/>
     </head>
     <body>
         <div>
@@ -63,7 +64,7 @@ include_once './dbconn_proc.php';
             </table>
             <hr>
             <!-- Mogli smo umjesto $result1->field_count koristiti mysqli_num_fields()-->
-            <table border="1">
+            <table border="1" class="CSSTableGenerator">
                      <tr>
                         <?php foreach ($imenapolja as $ime) { ?> <!-- START REPEATER 3 -->
                         <th><?= $ime ?></th>
