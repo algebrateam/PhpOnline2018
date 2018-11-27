@@ -13,18 +13,15 @@
                 if (isset($_REQUEST)) {
                     echo 'Unesite broj: ';
                     ?>
-                    <input type="number" name="broj" value="<?php echo $_REQUEST['broj']; ?>">   
-
+                    <input type="number" name="broj" value="<?php echo $_POST['broj']; ?>">   
 
                 <?php } ?>
                 <input type="submit" value="Send"><br>
 
-            </form>
             <?php
-            if (isset($_REQUEST['broj'])) {
-                for ($i = 0; $i < $_REQUEST['broj']; $i++) {
+            if (isset($_POST['broj'])) {
+                for ($i = 0; $i < $_POST['broj']; $i++) {
                     ?>
-                    <form method="POST" action="">
                         <label for="ime">Ime</label><br>
                         <input type="text" name="ime[]" required><br>
 
@@ -33,7 +30,7 @@
                     echo '<input type="submit" name="next"><br>';
                 }
                 ?>
-            </form>
+            
 
         </form>
 
