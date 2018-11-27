@@ -53,13 +53,13 @@ include_once './dbconn.php';
 
         </div>
         <div>
-            <form>
+            <form method="GET" action="/delete/65">
 
-                <select>
+                <select name="student">
                     <!-- repeater favoriti studenti -->
                     <optgroup style="background-color: antiquewhite">
                         <?php while ($row = $studenti->fetch_assoc()) { ?>
-                            <option id="mbr<?= $row['mbrStud'] ?>" 
+                            <option name="student"  id="mbr<?= $row['mbrStud'] ?>" 
                                     value="<?= $row['prezStud'] ?>">
                                 <?= $row['imeStud'] ?>
                             </option>
@@ -67,7 +67,7 @@ include_once './dbconn.php';
                     </optgroup>
                     <option value disabled>————————</option>
                         <?php while ($row = $studenti1->fetch_assoc()) { ?>
-                            <option id="mbr<?= $row['mbrStud'] ?>" 
+                            <option name="student" id="mbr<?= $row['mbrStud'] ?>" 
                                     value="<?= $row['prezStud'] ?>">
                                 <?= $row['imeStud'] ?>
                             </option>
@@ -75,7 +75,7 @@ include_once './dbconn.php';
                 </select>
 
 
-
+                <input type="submit" name="potvrdi" value="potvrdi">
             </form>
 
         </div>
