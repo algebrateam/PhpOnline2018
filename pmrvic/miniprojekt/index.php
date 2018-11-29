@@ -15,7 +15,7 @@
 		
 		protected function PageRequiresAuthenticUser()
 		{
-			return false;
+			return false; // ne zahjeva jer je ovo landing page!
 		}
 	}
 
