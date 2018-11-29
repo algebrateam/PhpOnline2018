@@ -1,0 +1,47 @@
+Opis projekta:
+
+epic story:
+- napravit stranice na koje će se korisnik logirati, 
+nakon logiranja treba imati mogućnost otići na svoju 
+sekciju i na njoj uploadati svoje fileove, web stranice 
+trebaju biti zaštićene sustavom autorizacije.
+
+user story 1:
+AS [ROLE]- kao korisnik 
+WANT - želim se registrirati 
+REASON - da bi dodao svoje fileove
+ACCEPTANCE - ukoliko me sustav propusti do moje sekcije 
+
+(X) task1: - napraviti bazu podataka
+task2: - napravi login formu
+task3: - napravi user section stranicu
+
+1 -> 2
+7 -> 6
+__
+4
+
+
+user story 2:
+AS [ROLE]- kao korisnik 
+WANT - želim uploadati fileove 
+REASON - da bi imao svoju arhivu
+ACCEPTANCE - ukoliko nakon uploada vidim svoje fileove
+
+___
+3
+
+user story 3:
+AS [ROLE]- kao korisnik 
+WANT - želim brisati fileove 
+REASON - da bi svoju arhivu održao aktualnom
+ACCEPTANCE - ukoliko uspijem obrisati fileove
+
+__
+1
+
+====
+8 dana
+
+
+
