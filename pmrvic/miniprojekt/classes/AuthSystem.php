@@ -37,9 +37,13 @@
 			try
 			{
 				if(!$this->databaseConnection->query("select 1 from users"))
-					return false;
+                                {
+					return false;  //bool tablica users postoji
+                                }
 				else
-					return true;
+                                {
+					return true;  //bool tablica users ne postoji
+                                }
 			}
 			catch (PDOException $e)
 			{

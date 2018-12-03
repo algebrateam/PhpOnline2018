@@ -7,8 +7,8 @@
 		{
 			$output = '';
 			
-			$output .= '<h1>Dobrodošli u AlgebraBox</h1>';
-			$output .= '<p>Pohranite svoje datoteke kod nas.</p>';
+			$output .= '<h1>Odjava</h1>';
+			$output .= '<p>Odjavljeni ste.</p>';
 			
 			return $output;
 		}
@@ -20,7 +20,12 @@
 	}
 
 	$site = new Index();
-   
+        $_SESSION["authenticated"]=null;
+        unset($_SESSION["authenticated"]);
+        session_unset();
+        session_destroy();
+        $site->BackToLanding();
+        
 	$site->Display('AlgebraBox Index');
         
         

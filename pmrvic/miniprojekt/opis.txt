@@ -12,9 +12,11 @@ WANT - želim se registrirati
 REASON - da bi dodao svoje fileove
 ACCEPTANCE - ukoliko me sustav propusti do moje sekcije 
 
-(X) task1: - napraviti bazu podataka
-task2: - napravi login formu
+(X) task1: - napraviti bazu podataka  // rješeno automatski kreiranjem novog objekta tipa Page
+(X) task2: - napravi login formu
 task3: - napravi user section stranicu
+(X) task4: napravi formu za registraciju
+task5: kada primim POST varijable form regaj, pozovi funkciju create_user() i dodaj usera u bazu
 
 1 -> 2
 7 -> 6
